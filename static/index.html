@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>ADCP 流束换算台证据工具</title>
+<style>
+  :root { --bd:#d9dde3; --mut:#6b7280; --ok:#2e8b57; --warn:#d9a300;
+          --bad:#b33a3a; --bg:#f6f7f9; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:13px/1.5 -apple-system,"PingFang SC","Microsoft YaHei",
+        sans-serif; background:var(--bg); color:#1f2933; }
+  header { background:#10243a; color:#fff; padding:10px 16px;
+           display:flex; gap:14px; align-items:center; }
+  header h1 { font-size:15px; margin:0; font-weight:600; }
+  header .meta { font-size:11px; opacity:.8; }
+  .wrap { display:grid; grid-template-columns: 230px 1fr 330px; gap:10px;
+          padding:10px; }
+  .card { background:#fff; border:1px solid var(--bd); border-radius:8px;
+          padding:10px; }
+  .card h2 { font-size:12px; margin:0 0 8px; color:#334155;
+             text-transform:uppercase; letter-spacing:.04em; }
+  button { border:1px solid #b8c0cc; background:#fff; border-radius:6px;
+           padding:4px 9px; cursor:pointer; font-size:12px; }
+  button:hover { background:#eef3fa; }
+  .pingrow { display:flex; flex-wrap:wrap; gap:4px; }
+  .pingrow button { width:30px; }
+  .pingrow button.active { background:#1f6fb2; color:#fff; border-color:#1f6fb2;}
+  table { border-collapse:collapse; width:100%; font-size:11.5px; }
+  th,td { border-bottom:1px solid #eceff3; padding:3px 5px; text-align:left;
+          vertical-align:top; }
+  .id { font-family:ui-monospace,Menlo,monospace; font-size:10px;
+        color:#5a6b7f; }
+  .pill { display:inline-block; padding:0 7px; border-radius:10px;
+          font-size:10.5px; color:#fff; }
+  .pill.four_beam_ok,.pill.four { background:var(--ok); }
+  .pill.three_beam,.pill.three,.pill.ambiguous_multi,
+        .pill.decided_t { background:var(--warn); }
+  .pill.rejected { background:var(--bad); }
+  .muted { color:var(--mut); }
+  .vec { font-family:ui-monospace,Menlo,monospace; }
+  .evline { border-left:3px solid #c9d4e2; padding:4px 8px; margin:5px 0;
+            background:#fbfcfe; border-radius:0 6px 6px 0; }
+  .evline.bad { border-color:var(--bad); }
+  .evline.warn { border-color:var(--warn); }
+  select,input,textarea { font:inherit; border:1px solid #c3cad4;
+        border-radius:5px; padding:3px 6px; width:100%; }
+  .row { display:flex; gap:6px; align-items:center; margin:5px 0; }
+  .row > * { flex:1; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:6px; }
+  .cand { border:1px dashed #c9d4e2; border-radius:6px; padding:5px 8px;
+          margin:4px 0; }
+  .cand.chosen { border-style:solid; border-color:var(--ok);
+          background:#f1faf4; }
+  .tabs { display:flex; gap:4px; margin-bottom:8px; flex-wrap:wrap; }
+  .tabs button.active { background:#10243a; color:#fff; border-color:#10243a;}
+  .hidden { display:none; }
+  .chain { font-size:11px; }
+  .chain .node { margin-left:12px; border-left:2px dotted #c9d4e2;
+          padding-left:8px; }
+  #toast { position:fixed; bottom:14px; right:14px; background:#10243a;
+          color:#fff; padding:8px 12px; border-radius:8px; font-size:12px;
+          opacity:0; transition:opacity .25s; max-width:420px; }
+  .guide { background:#fff7e6; border:1px solid #ecd9a8; border-radius:8px;
+          padding:8px 12px; font-size:12px; }
+  .guide b { color:#8a5a00; }
+  .small { font-size:11px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>ADCP 流束换算台：波束速度 · 姿态旋转 · 质量层级</h1>
+  <span class="meta" id="head-meta">加载中…</span>
+  <span style="flex:1"></span>
+  <a href="/api/export" style="color:#cfe2ff;font-size:12px">导出证据包</a>
+  <button onclick="reimportDemo()">导入(重导示例包)</button>
+</header>
+
+<div class="wrap">
+  <div class="card">
+    <h2>事件时间线</h2>
+    <div id="events" class="small"></div>
+    <h2 style="margin-top:12px">分支</h2>
+    <div id="branches" class="small"></div>
+    <h2 style="margin-top:12px">短样例路径</h2>
+    <div class="guide" id="guide"></div>
+  </div>
+
+  <div class="card">
+    <div class="row">
+      <div class="pingrow" id="pings"></div>
+      <div style="max-width:210px">
+        <select id="cidselect" onchange="loadPing()"></select>
+      </div>
+    </div>
+    <div class="tabs">
+      <button data-tab="quality" class="active" onclick="tab('quality')">波束质量</button>
+      <button data-tab="transform" onclick="tab('transform')">逐级向量变换</button>
+      <button data-tab="profile" onclick="tab('profile')">垂向剖面</button>
+      <button data-tab="excluded" onclick="tab('excluded')">被排除 cell 证据</button>
+    </div>
+
+    <div id="tab-quality"></div>
+    <div id="tab-transform" class="hidden"></div>
+    <div id="tab-profile" class="hidden"></div>
+    <div id="tab-excluded" class="hidden"></div>
+  </div>
+
+  <div class="card">
+    <h2>来源链 / 裁定</h2>
+    <div id="detail" class="chain muted">点选左侧任意值查看来源链</div>
+  </div>
+</div>
+<div id="toast"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>
