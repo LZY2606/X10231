@@ -1,0 +1,20 @@
+{
+ "label": "local source correction: single beam velocity re-read",
+ "sources": [
+  {
+   "kind": "beam_velocity",
+   "ping": 4,
+   "beam": 1,
+   "cell": 3,
+   "t": 4.0,
+   "frame": "beam",
+   "unit": "m/s",
+   "raw": "0.221105",
+   "value": 0.221105,
+   "meta": {
+    "correction": "re-read from raw recorder",
+    "supersedes": "baseline"
+   }
+  }
+ ]
+}

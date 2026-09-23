@@ -1,0 +1,10 @@
+{
+ "label": "mounting angle revision after dockside re-survey",
+ "param": "mounting_angle_deg",
+ "value": 1.2,
+ "unit": "deg",
+ "meta": {
+  "reason": "dockside re-survey 2026-09-12",
+  "previous": 0.5
+ }
+}

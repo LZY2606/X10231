@@ -1,0 +1,33 @@
+{
+ "case": "流束换算台: ADCP 波束速度、姿态旋转与质量层级",
+ "narrative": "hydrology team recomputes instrument, ship and earth frame velocities from raw beam velocity, attitude, bottom track and transducer configuration",
+ "boundary_scenarios": [
+  {"id": "single_beam_failure", "where": {"ping": 6, "beam": 3},
+   "trigger": "bad_beam_flag=1 with consistent low correlation",
+   "expected": "3-beam solution only; no 4-beam value fabricated; event single_beam_failure"},
+  {"id": "heading_360_crossing", "where": {"ping": 5},
+   "trigger": "heading 359 deg -> 1 deg between bracketing samples",
+   "expected": "interpolation on unwrapped heading; event heading_unwrap"},
+  {"id": "time_gap", "where": {"ping": 9},
+   "trigger": "attitude samples missing between t=8.0 and t=10.0 (gap 2.0s > max 1.5s)",
+   "expected": "no interpolation across the gap; earth transform blocked; values stay in instrument frame with diagnostic; event attitude_gap"},
+  {"id": "three_beam_ambiguity", "where": {"ping": 10, "beam": 2},
+   "trigger": "bad_beam_flag=1 contradicted by good correlation (131)",
+   "expected": "cand-beam3 and cand-beam4 kept as separate candidates, never merged; event three_beam_ambiguity"},
+  {"id": "mounting_angle_revision", "where": {"param": "mounting_angle_deg"},
+   "trigger": "0.5 deg -> 1.2 deg after dockside re-survey",
+   "expected": "only ship_vel/earth_vel/profile nodes recomputed; beam_qc/instr_vel copied as still-valid; event param_revision"},
+  {"id": "transform_order", "where": {"param": "transform_order"},
+   "trigger": "variant branch applies attitude before mounting correction",
+   "expected": "different fingerprint for identical inputs; order string and version recorded in fingerprint_components event"},
+  {"id": "invalid_depth_cell", "where": [{"cell": 6}, {"ping": 11, "cell": 4}, {"ping": 12, "cell": 3, "beam": 2}],
+   "trigger": "depth beyond max range / low correlation / amplitude out of range",
+   "expected": "cells excluded but kept in place with diagnostics; event invalid_depth_cell / cell_excluded"}
+ ],
+ "invariants": [
+  "3-beam and 4-beam solutions are never merged into one value",
+  "attitude interpolation never crosses a time gap",
+  "transform order, beam geometry and magnetic declination version all enter the derived fingerprint",
+  "ambiguous states keep every legal candidate instead of collapsing to a single answer"
+ ]
+}

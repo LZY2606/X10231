@@ -1,0 +1,13 @@
+{
+ "label": "two reviewers decide on the ambiguous ping-10 cell-3 three-beam case from the same base version",
+ "node": "instr_vel/p10/c3",
+ "decision_a": {
+  "candidate": "cand-beam4",
+  "note": "reviewer A: flag contradicted by good correlation; adopt 4-beam solution"
+ },
+ "decision_b": {
+  "candidate": "cand-beam3",
+  "note": "reviewer B: trust the flag; adopt 3-beam solution"
+ },
+ "resolution": "a"
+}
