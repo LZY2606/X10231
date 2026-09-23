@@ -1,0 +1,73 @@
+{
+  "case_id": "liushu-adcp-2026",
+  "steps": [
+    {
+      "id": "revise-mounting",
+      "kind": "param_revision",
+      "title": "安装角修订 (0.0° -> 1.7°)",
+      "record": {
+        "id": "mnt:1",
+        "kind": "mounting_angle",
+        "value_raw": "1.7",
+        "unit": "deg",
+        "frame": "ship",
+        "source": "dock-align-2026-05-rev1"
+      },
+      "expect_affected": [
+        "earth/p1",
+        "earth/p2",
+        "earth/p3",
+        "earth/p4",
+        "profile/p1",
+        "profile/p2",
+        "profile/p3",
+        "profile/p4",
+        "ship/p1",
+        "ship/p2",
+        "ship/p3",
+        "ship/p4"
+      ]
+    },
+    {
+      "id": "beam-fail",
+      "kind": "source_change",
+      "title": "只改一个直接来源：ping4 beam2 坏波束标志",
+      "supersede": "flg:p4:b2",
+      "record": {
+        "id": "flg:p4:b2#r4",
+        "kind": "bad_beam_flag",
+        "ping": 4,
+        "beam": 2,
+        "cell": null,
+        "t": 3.5,
+        "value_raw": "true",
+        "unit": "bool",
+        "frame": "beam",
+        "source": "field-flag-revision-2026-05-02"
+      },
+      "expect_affected": [
+        "beamq/p4",
+        "instr/p4",
+        "ship/p4",
+        "earth/p4",
+        "profile/p4"
+      ]
+    },
+    {
+      "id": "conflict-decision",
+      "kind": "decision_conflict",
+      "title": "两位使用者基于同一版本对三波束候选做冲突决定",
+      "node": "instr/p4",
+      "users": [
+        "hydro-a",
+        "hydro-b"
+      ],
+      "choices": [
+        0,
+        2
+      ],
+      "resolution": "theirs",
+      "expect_versions_after": 6
+    }
+  ]
+}
