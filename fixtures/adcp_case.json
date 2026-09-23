@@ -1,0 +1,2126 @@
+{
+  "amplitude": [
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "115",
+      "raw_unit": "counts_dB",
+      "raw_value": 115
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "120",
+      "raw_unit": "counts_dB",
+      "raw_value": 120
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "125",
+      "raw_unit": "counts_dB",
+      "raw_value": 125
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "130",
+      "raw_unit": "counts_dB",
+      "raw_value": 130
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "117",
+      "raw_unit": "counts_dB",
+      "raw_value": 117
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "122",
+      "raw_unit": "counts_dB",
+      "raw_value": 122
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "127",
+      "raw_unit": "counts_dB",
+      "raw_value": 127
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "132",
+      "raw_unit": "counts_dB",
+      "raw_value": 132
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "119",
+      "raw_unit": "counts_dB",
+      "raw_value": 119
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "124",
+      "raw_unit": "counts_dB",
+      "raw_value": 124
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "129",
+      "raw_unit": "counts_dB",
+      "raw_value": 129
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "134",
+      "raw_unit": "counts_dB",
+      "raw_value": 134
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "115",
+      "raw_unit": "counts_dB",
+      "raw_value": 115
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "120",
+      "raw_unit": "counts_dB",
+      "raw_value": 120
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "125",
+      "raw_unit": "counts_dB",
+      "raw_value": 125
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "130",
+      "raw_unit": "counts_dB",
+      "raw_value": 130
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "117",
+      "raw_unit": "counts_dB",
+      "raw_value": 117
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "122",
+      "raw_unit": "counts_dB",
+      "raw_value": 122
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "127",
+      "raw_unit": "counts_dB",
+      "raw_value": 127
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "132",
+      "raw_unit": "counts_dB",
+      "raw_value": 132
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "119",
+      "raw_unit": "counts_dB",
+      "raw_value": 119
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "124",
+      "raw_unit": "counts_dB",
+      "raw_value": 124
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "129",
+      "raw_unit": "counts_dB",
+      "raw_value": 129
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "134",
+      "raw_unit": "counts_dB",
+      "raw_value": 134
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "115",
+      "raw_unit": "counts_dB",
+      "raw_value": 115
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "120",
+      "raw_unit": "counts_dB",
+      "raw_value": 120
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "125",
+      "raw_unit": "counts_dB",
+      "raw_value": 125
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "130",
+      "raw_unit": "counts_dB",
+      "raw_value": 130
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "117",
+      "raw_unit": "counts_dB",
+      "raw_value": 117
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "122",
+      "raw_unit": "counts_dB",
+      "raw_value": 122
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "127",
+      "raw_unit": "counts_dB",
+      "raw_value": 127
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "132",
+      "raw_unit": "counts_dB",
+      "raw_value": 132
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "119",
+      "raw_unit": "counts_dB",
+      "raw_value": 119
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "124",
+      "raw_unit": "counts_dB",
+      "raw_value": 124
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "129",
+      "raw_unit": "counts_dB",
+      "raw_value": 129
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "134",
+      "raw_unit": "counts_dB",
+      "raw_value": 134
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "115",
+      "raw_unit": "counts_dB",
+      "raw_value": 115
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "120",
+      "raw_unit": "counts_dB",
+      "raw_value": 120
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "125",
+      "raw_unit": "counts_dB",
+      "raw_value": 125
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "130",
+      "raw_unit": "counts_dB",
+      "raw_value": 130
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "117",
+      "raw_unit": "counts_dB",
+      "raw_value": 117
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "122",
+      "raw_unit": "counts_dB",
+      "raw_value": 122
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "127",
+      "raw_unit": "counts_dB",
+      "raw_value": 127
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "132",
+      "raw_unit": "counts_dB",
+      "raw_value": 132
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "119",
+      "raw_unit": "counts_dB",
+      "raw_value": 119
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "124",
+      "raw_unit": "counts_dB",
+      "raw_value": 124
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "129",
+      "raw_unit": "counts_dB",
+      "raw_value": 129
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "134",
+      "raw_unit": "counts_dB",
+      "raw_value": 134
+    }
+  ],
+  "attitude": [
+    {
+      "dataset_id": "DS_ADCP_2026",
+      "field": "heading",
+      "ping_time": 0.0,
+      "raw_repr": "359.0",
+      "raw_unit": "degrees_magnetic",
+      "raw_value": 359.0
+    },
+    {
+      "dataset_id": "DS_ADCP_2026",
+      "field": "pitch",
+      "ping_time": 0.0,
+      "raw_repr": "0.2",
+      "raw_unit": "degrees",
+      "raw_value": 0.2
+    },
+    {
+      "dataset_id": "DS_ADCP_2026",
+      "field": "roll",
+      "ping_time": 0.0,
+      "raw_repr": "0.0",
+      "raw_unit": "degrees",
+      "raw_value": 0.0
+    },
+    {
+      "dataset_id": "DS_ADCP_2026",
+      "field": "heading",
+      "ping_time": 1.0,
+      "raw_repr": "1.0",
+      "raw_unit": "degrees_magnetic",
+      "raw_value": 1.0
+    },
+    {
+      "dataset_id": "DS_ADCP_2026",
+      "field": "pitch",
+      "ping_time": 1.0,
+      "raw_repr": "-0.1",
+      "raw_unit": "degrees",
+      "raw_value": -0.1
+    },
+    {
+      "dataset_id": "DS_ADCP_2026",
+      "field": "roll",
+      "ping_time": 1.0,
+      "raw_repr": "0.1",
+      "raw_unit": "degrees",
+      "raw_value": 0.1
+    },
+    {
+      "dataset_id": "DS_ADCP_2026",
+      "field": "heading",
+      "ping_time": 2.0,
+      "raw_repr": "2.0",
+      "raw_unit": "degrees_magnetic",
+      "raw_value": 2.0
+    },
+    {
+      "dataset_id": "DS_ADCP_2026",
+      "field": "pitch",
+      "ping_time": 2.0,
+      "raw_repr": "0.0",
+      "raw_unit": "degrees",
+      "raw_value": 0.0
+    },
+    {
+      "dataset_id": "DS_ADCP_2026",
+      "field": "roll",
+      "ping_time": 2.0,
+      "raw_repr": "-0.1",
+      "raw_unit": "degrees",
+      "raw_value": -0.1
+    },
+    {
+      "dataset_id": "DS_ADCP_2026",
+      "field": "heading",
+      "ping_time": 3.0,
+      "raw_repr": "3.0",
+      "raw_unit": "degrees_magnetic",
+      "raw_value": 3.0
+    },
+    {
+      "dataset_id": "DS_ADCP_2026",
+      "field": "pitch",
+      "ping_time": 3.0,
+      "raw_repr": "0.1",
+      "raw_unit": "degrees",
+      "raw_value": 0.1
+    },
+    {
+      "dataset_id": "DS_ADCP_2026",
+      "field": "roll",
+      "ping_time": 3.0,
+      "raw_repr": "0.0",
+      "raw_unit": "degrees",
+      "raw_value": 0.0
+    }
+  ],
+  "beam": [
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "0.013612",
+      "raw_unit": "m/s",
+      "raw_value": 0.013612
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "-0.023976",
+      "raw_unit": "m/s",
+      "raw_value": -0.023976
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "-0.136739",
+      "raw_unit": "m/s",
+      "raw_value": -0.136739
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "-0.099151",
+      "raw_unit": "m/s",
+      "raw_value": -0.099151
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "0.014296",
+      "raw_unit": "m/s",
+      "raw_value": 0.014296
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "-0.018593",
+      "raw_unit": "m/s",
+      "raw_value": -0.018593
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "-0.136055",
+      "raw_unit": "m/s",
+      "raw_value": -0.136055
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "-0.103166",
+      "raw_unit": "m/s",
+      "raw_value": -0.103166
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "0.014980",
+      "raw_unit": "m/s",
+      "raw_value": 0.01498
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "-0.013211",
+      "raw_unit": "m/s",
+      "raw_value": -0.013211
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "-0.135371",
+      "raw_unit": "m/s",
+      "raw_value": -0.135371
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "-0.107180",
+      "raw_unit": "m/s",
+      "raw_value": -0.10718
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "0.019589",
+      "raw_unit": "m/s",
+      "raw_value": 0.019589
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "-0.027396",
+      "raw_unit": "m/s",
+      "raw_value": -0.027396
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "-0.149556",
+      "raw_unit": "m/s",
+      "raw_value": -0.149556
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "-0.102572",
+      "raw_unit": "m/s",
+      "raw_value": -0.102572
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "0.020273",
+      "raw_unit": "m/s",
+      "raw_value": 0.020273
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "-0.022014",
+      "raw_unit": "m/s",
+      "raw_value": -0.022014
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "-0.148872",
+      "raw_unit": "m/s",
+      "raw_value": -0.148872
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "-0.106586",
+      "raw_unit": "m/s",
+      "raw_value": -0.106586
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "0.020957",
+      "raw_unit": "m/s",
+      "raw_value": 0.020957
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "-0.016631",
+      "raw_unit": "m/s",
+      "raw_value": -0.016631
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "-0.148188",
+      "raw_unit": "m/s",
+      "raw_value": -0.148188
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "-0.110600",
+      "raw_unit": "m/s",
+      "raw_value": -0.1106
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "0.025565",
+      "raw_unit": "m/s",
+      "raw_value": 0.025565
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "-0.030816",
+      "raw_unit": "m/s",
+      "raw_value": -0.030816
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "-0.162373",
+      "raw_unit": "m/s",
+      "raw_value": -0.162373
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "-0.105992",
+      "raw_unit": "m/s",
+      "raw_value": -0.105992
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "0.026249",
+      "raw_unit": "m/s",
+      "raw_value": 0.026249
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "-0.025434",
+      "raw_unit": "m/s",
+      "raw_value": -0.025434
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "-0.161689",
+      "raw_unit": "m/s",
+      "raw_value": -0.161689
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "-0.110006",
+      "raw_unit": "m/s",
+      "raw_value": -0.110006
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "0.026933",
+      "raw_unit": "m/s",
+      "raw_value": 0.026933
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "-0.020051",
+      "raw_unit": "m/s",
+      "raw_value": -0.020051
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "-0.161005",
+      "raw_unit": "m/s",
+      "raw_value": -0.161005
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "-0.114021",
+      "raw_unit": "m/s",
+      "raw_value": -0.114021
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "0.031542",
+      "raw_unit": "m/s",
+      "raw_value": 0.031542
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "-0.034237",
+      "raw_unit": "m/s",
+      "raw_value": -0.034237
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "-0.175190",
+      "raw_unit": "m/s",
+      "raw_value": -0.17519
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "-0.109412",
+      "raw_unit": "m/s",
+      "raw_value": -0.109412
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "0.032226",
+      "raw_unit": "m/s",
+      "raw_value": 0.032226
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "-0.028854",
+      "raw_unit": "m/s",
+      "raw_value": -0.028854
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "-0.174506",
+      "raw_unit": "m/s",
+      "raw_value": -0.174506
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "-0.113426",
+      "raw_unit": "m/s",
+      "raw_value": -0.113426
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "0.032910",
+      "raw_unit": "m/s",
+      "raw_value": 0.03291
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "-0.023472",
+      "raw_unit": "m/s",
+      "raw_value": -0.023472
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "-0.173822",
+      "raw_unit": "m/s",
+      "raw_value": -0.173822
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "-0.117441",
+      "raw_unit": "m/s",
+      "raw_value": -0.117441
+    }
+  ],
+  "bottom_track": [
+    {
+      "beam": "b1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "-0.035895",
+      "raw_unit": "m/s",
+      "raw_value": -0.035895
+    },
+    {
+      "beam": "b2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "-0.026498",
+      "raw_unit": "m/s",
+      "raw_value": -0.026498
+    },
+    {
+      "beam": "b3",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "0.001693",
+      "raw_unit": "m/s",
+      "raw_value": 0.001693
+    },
+    {
+      "beam": "b4",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "-0.007704",
+      "raw_unit": "m/s",
+      "raw_value": -0.007704
+    },
+    {
+      "beam": "b1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "-0.038714",
+      "raw_unit": "m/s",
+      "raw_value": -0.038714
+    },
+    {
+      "beam": "b2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "-0.026498",
+      "raw_unit": "m/s",
+      "raw_value": -0.026498
+    },
+    {
+      "beam": "b3",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "0.004512",
+      "raw_unit": "m/s",
+      "raw_value": 0.004512
+    },
+    {
+      "beam": "b4",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "-0.007704",
+      "raw_unit": "m/s",
+      "raw_value": -0.007704
+    },
+    {
+      "beam": "b1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "-0.041533",
+      "raw_unit": "m/s",
+      "raw_value": -0.041533
+    },
+    {
+      "beam": "b2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "-0.026498",
+      "raw_unit": "m/s",
+      "raw_value": -0.026498
+    },
+    {
+      "beam": "b3",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "0.007331",
+      "raw_unit": "m/s",
+      "raw_value": 0.007331
+    },
+    {
+      "beam": "b4",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "-0.007704",
+      "raw_unit": "m/s",
+      "raw_value": -0.007704
+    },
+    {
+      "beam": "b1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "-0.044352",
+      "raw_unit": "m/s",
+      "raw_value": -0.044352
+    },
+    {
+      "beam": "b2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "-0.026498",
+      "raw_unit": "m/s",
+      "raw_value": -0.026498
+    },
+    {
+      "beam": "b3",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "0.010150",
+      "raw_unit": "m/s",
+      "raw_value": 0.01015
+    },
+    {
+      "beam": "b4",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "-0.007704",
+      "raw_unit": "m/s",
+      "raw_value": -0.007704
+    }
+  ],
+  "case_version": "adcp-janus-evidence-v1.0",
+  "cell_validity": [
+    {
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "reason": "valid depth cell",
+      "valid": true
+    },
+    {
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "reason": "valid depth cell",
+      "valid": true
+    },
+    {
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "reason": "valid depth cell",
+      "valid": true
+    },
+    {
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "reason": "valid depth cell",
+      "valid": true
+    },
+    {
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "reason": "valid depth cell",
+      "valid": true
+    },
+    {
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "reason": "valid depth cell",
+      "valid": true
+    },
+    {
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "reason": "valid depth cell",
+      "valid": true
+    },
+    {
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "reason": "valid depth cell",
+      "valid": true
+    },
+    {
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "reason": "valid depth cell",
+      "valid": true
+    },
+    {
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "reason": "valid depth cell",
+      "valid": true
+    },
+    {
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "reason": "valid depth cell",
+      "valid": true
+    },
+    {
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "reason": "valid depth cell",
+      "valid": true
+    }
+  ],
+  "cells": [
+    {
+      "cell_id": "C0",
+      "depth_m": 3.5,
+      "ordinal": 0
+    },
+    {
+      "cell_id": "C1",
+      "depth_m": 5.5,
+      "ordinal": 1
+    },
+    {
+      "cell_id": "C2",
+      "depth_m": 7.5,
+      "ordinal": 2
+    }
+  ],
+  "correlation": [
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "190",
+      "raw_unit": "counts_0_255",
+      "raw_value": 190
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "197",
+      "raw_unit": "counts_0_255",
+      "raw_value": 197
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "204",
+      "raw_unit": "counts_0_255",
+      "raw_value": 204
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "211",
+      "raw_unit": "counts_0_255",
+      "raw_value": 211
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "193",
+      "raw_unit": "counts_0_255",
+      "raw_value": 193
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "200",
+      "raw_unit": "counts_0_255",
+      "raw_value": 200
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "207",
+      "raw_unit": "counts_0_255",
+      "raw_value": 207
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "214",
+      "raw_unit": "counts_0_255",
+      "raw_value": 214
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "196",
+      "raw_unit": "counts_0_255",
+      "raw_value": 196
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "203",
+      "raw_unit": "counts_0_255",
+      "raw_value": 203
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "210",
+      "raw_unit": "counts_0_255",
+      "raw_value": 210
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P0",
+      "raw_repr": "217",
+      "raw_unit": "counts_0_255",
+      "raw_value": 217
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "190",
+      "raw_unit": "counts_0_255",
+      "raw_value": 190
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "197",
+      "raw_unit": "counts_0_255",
+      "raw_value": 197
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "204",
+      "raw_unit": "counts_0_255",
+      "raw_value": 204
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "211",
+      "raw_unit": "counts_0_255",
+      "raw_value": 211
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "193",
+      "raw_unit": "counts_0_255",
+      "raw_value": 193
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "200",
+      "raw_unit": "counts_0_255",
+      "raw_value": 200
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "207",
+      "raw_unit": "counts_0_255",
+      "raw_value": 207
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "214",
+      "raw_unit": "counts_0_255",
+      "raw_value": 214
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "196",
+      "raw_unit": "counts_0_255",
+      "raw_value": 196
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "203",
+      "raw_unit": "counts_0_255",
+      "raw_value": 203
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "210",
+      "raw_unit": "counts_0_255",
+      "raw_value": 210
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P1",
+      "raw_repr": "217",
+      "raw_unit": "counts_0_255",
+      "raw_value": 217
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "190",
+      "raw_unit": "counts_0_255",
+      "raw_value": 190
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "197",
+      "raw_unit": "counts_0_255",
+      "raw_value": 197
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "204",
+      "raw_unit": "counts_0_255",
+      "raw_value": 204
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "211",
+      "raw_unit": "counts_0_255",
+      "raw_value": 211
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "193",
+      "raw_unit": "counts_0_255",
+      "raw_value": 193
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "200",
+      "raw_unit": "counts_0_255",
+      "raw_value": 200
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "207",
+      "raw_unit": "counts_0_255",
+      "raw_value": 207
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "214",
+      "raw_unit": "counts_0_255",
+      "raw_value": 214
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "196",
+      "raw_unit": "counts_0_255",
+      "raw_value": 196
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "203",
+      "raw_unit": "counts_0_255",
+      "raw_value": 203
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "210",
+      "raw_unit": "counts_0_255",
+      "raw_value": 210
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P2",
+      "raw_repr": "217",
+      "raw_unit": "counts_0_255",
+      "raw_value": 217
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "190",
+      "raw_unit": "counts_0_255",
+      "raw_value": 190
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "197",
+      "raw_unit": "counts_0_255",
+      "raw_value": 197
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "204",
+      "raw_unit": "counts_0_255",
+      "raw_value": 204
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "211",
+      "raw_unit": "counts_0_255",
+      "raw_value": 211
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "193",
+      "raw_unit": "counts_0_255",
+      "raw_value": 193
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "200",
+      "raw_unit": "counts_0_255",
+      "raw_value": 200
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "207",
+      "raw_unit": "counts_0_255",
+      "raw_value": 207
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "214",
+      "raw_unit": "counts_0_255",
+      "raw_value": 214
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "196",
+      "raw_unit": "counts_0_255",
+      "raw_value": 196
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "203",
+      "raw_unit": "counts_0_255",
+      "raw_value": 203
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "210",
+      "raw_unit": "counts_0_255",
+      "raw_value": 210
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "ping_id": "P3",
+      "raw_repr": "SAT",
+      "raw_unit": "counts_0_255",
+      "raw_value": null
+    }
+  ],
+  "dataset_id": "DS_ADCP_2026",
+  "declination": {
+    "declination_id": "decl-main",
+    "degrees": -7.0,
+    "model_version": "WMM-2025.1"
+  },
+  "flags": [
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C0",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C1",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "C2",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P0"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P1"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P2"
+    },
+    {
+      "beam": "b1",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b2",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b3",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    },
+    {
+      "beam": "b4",
+      "cell_id": "bottom",
+      "dataset_id": "DS_ADCP_2026",
+      "flag": "ok",
+      "ping_id": "P3"
+    }
+  ],
+  "geometry": {
+    "angle_unit": "deg",
+    "beam_angle": 20.0,
+    "geom_id": "geom-main",
+    "geometry_version": "rdi-convex-janus-v1"
+  },
+  "installation": {
+    "angle": 2.5,
+    "angle_unit": "deg",
+    "install_id": "install-main"
+  },
+  "name": "流束换算台：ADCP 波束速度、姿态旋转与质量层级",
+  "pings": [
+    {
+      "ordinal": 0,
+      "ping_id": "P0",
+      "ping_time": 0.0
+    },
+    {
+      "ordinal": 1,
+      "ping_id": "P1",
+      "ping_time": 1.0
+    },
+    {
+      "ordinal": 2,
+      "ping_id": "P2",
+      "ping_time": 2.0
+    },
+    {
+      "ordinal": 3,
+      "ping_id": "P3",
+      "ping_time": 3.0
+    }
+  ]
+}
