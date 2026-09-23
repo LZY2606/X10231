@@ -1,0 +1,76 @@
+{
+  "replay_steps": [
+    {
+      "id": "S0",
+      "label": "baseline import",
+      "kind": "import"
+    },
+    {
+      "id": "S1",
+      "label": "single beam failure evidence (fixture)",
+      "kind": "inspect",
+      "focus": "P02"
+    },
+    {
+      "id": "S2",
+      "label": "heading wrap across 360",
+      "kind": "inspect",
+      "focus": [
+        "P03",
+        "P04"
+      ]
+    },
+    {
+      "id": "S3",
+      "label": "time gap: no interpolation across it",
+      "kind": "inspect",
+      "focus": [
+        "P04",
+        "P05"
+      ]
+    },
+    {
+      "id": "S4",
+      "label": "three-beam multi-solution retained",
+      "kind": "inspect",
+      "focus": "P06"
+    },
+    {
+      "id": "S5",
+      "label": "mount angle revision v1 -> v2",
+      "kind": "source_revision",
+      "doc": "doc:mount",
+      "file": "mount_v2.json"
+    },
+    {
+      "id": "S6",
+      "label": "wrong transform order branch",
+      "kind": "branch",
+      "order": "v2_fused_yaw"
+    },
+    {
+      "id": "S7",
+      "label": "invalid depth cell evidence",
+      "kind": "inspect",
+      "focus": "P09"
+    },
+    {
+      "id": "S8",
+      "label": "declination revision v1 -> v2",
+      "kind": "source_revision",
+      "doc": "doc:declination",
+      "file": "declination_v2.json"
+    },
+    {
+      "id": "S9",
+      "label": "local-only source correction (P11 beam 1)",
+      "kind": "source_correction",
+      "focus": "P11"
+    },
+    {
+      "id": "S10",
+      "label": "conflicting human decisions",
+      "kind": "conflict"
+    }
+  ]
+}

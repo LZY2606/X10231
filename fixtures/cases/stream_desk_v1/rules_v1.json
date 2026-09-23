@@ -1,0 +1,9 @@
+{
+  "record_kind": "rules",
+  "version": "rules-v1",
+  "correlation_min": 64,
+  "amplitude_min": 40,
+  "attitude_max_gap_s": 5.0,
+  "sidelobe_margin_m": 0.5,
+  "transform_order": "v1_separated"
+}

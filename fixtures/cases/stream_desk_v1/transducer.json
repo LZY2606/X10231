@@ -1,0 +1,14 @@
+{
+  "record_kind": "transducer",
+  "version": "transducer-v1",
+  "beam_angle_deg": 20.0,
+  "azimuths_deg": [
+    45.0,
+    315.0,
+    225.0,
+    135.0
+  ],
+  "frequency_khz": 600,
+  "cell_spacing_m": 1.0,
+  "cell_start_m": 1.5
+}

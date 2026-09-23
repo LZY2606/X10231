@@ -1,0 +1,6 @@
+{
+  "record_kind": "declination",
+  "version": "declination-v2",
+  "declination_deg": 7.4,
+  "model": "IGRF-14 2026.0 local sheet"
+}

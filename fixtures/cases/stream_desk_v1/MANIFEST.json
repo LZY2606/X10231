@@ -1,0 +1,26 @@
+{
+  "case_id": "stream_desk_v1",
+  "title": "流束换算台：ADCP 波束速度、姿态旋转与质量层级",
+  "beam_velocity_convention": "positive = water toward transducer face",
+  "frames": {
+    "instrument_xyz": "right handed x=fwd,y=stbd,z=down",
+    "ship": "mount rotation then attitude; FRD internally, FSU shown",
+    "earth": "ENU; heading 0 -> forward points north"
+  },
+  "units_on_import": {
+    "beam_velocity": "m/s (one row deliberately carries cm/s units)",
+    "correlation": "counts 0..255",
+    "amplitude": "counts 0..255 (one cell carries an unparseable token)",
+    "attitude": "degrees; heading datum magnetic",
+    "depth": "meters"
+  },
+  "scenario_index": {
+    "P02": "single beam failure (beam 2 flagged, low correlation)",
+    "P04->P05": "time gap; attitude sample across the gap removed",
+    "P03-P04": "heading wrap 359.4 -> 0.6 degrees",
+    "P06": "three-beam multiple solution (beam 4 weak, not flagged)",
+    "P09": "invalid depth cell (below sidelobe-safe depth)",
+    "P10": "bottom track evidence",
+    "P11": "local-only source correction in replay"
+  }
+}
