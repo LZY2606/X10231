@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<title>ADCP 流束换算台 · 流速证据复核</title>
+<style>
+  body { font: 13px/1.5 -apple-system, "PingFang SC", sans-serif; margin: 0; color: #1a202c; }
+  header { background: #1a365d; color: #fff; padding: 10px 16px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  header h1 { font-size: 15px; margin: 0; font-weight: 600; }
+  button { border: 1px solid #2b6cb0; background: #ebf4ff; color: #1a365d; border-radius: 4px; padding: 4px 10px; cursor: pointer; font-size: 12px; }
+  button:hover { background: #bee3f8; }
+  .layout { display: grid; grid-template-columns: 230px 1fr 320px; gap: 0; min-height: calc(100vh - 46px); }
+  .col { border-right: 1px solid #e2e8f0; padding: 10px; overflow: auto; max-height: calc(100vh - 46px); }
+  .ping { padding: 5px 8px; border-radius: 4px; cursor: pointer; }
+  .ping:hover { background: #edf2f7; }
+  .ping.sel { background: #2b6cb0; color: #fff; }
+  .tag { display: inline-block; font-size: 10px; padding: 0 5px; border-radius: 8px; margin-left: 4px; }
+  .t-warn { background: #fefcbf; color: #744210; }
+  .t-bad { background: #fed7d7; color: #742a2a; }
+  .t-ok { background: #c6f6d5; color: #22543d; }
+  .card { border: 1px solid #e2e8f0; border-radius: 6px; padding: 8px 10px; margin-bottom: 8px; }
+  .card h3 { margin: 0 0 6px; font-size: 12px; color: #2c5282; }
+  .mono { font-family: ui-monospace, Menlo, monospace; font-size: 11px; color: #4a5568; }
+  table { border-collapse: collapse; width: 100%; font-size: 11px; }
+  th, td { border: 1px solid #edf2f7; padding: 2px 5px; text-align: right; }
+  th:first-child, td:first-child { text-align: left; }
+  .excl { background: #fff5f5; }
+  .ambig { background: #fffff0; }
+  .cand { margin: 4px 0; padding: 4px 6px; border-left: 3px solid #cbd5e0; }
+  .cand.four { border-left-color: #38a169; }
+  .cand.three { border-left-color: #dd6b20; }
+  .muted { color: #a0aec0; }
+  .ev { font-size: 11px; padding: 2px 4px; border-bottom: 1px dashed #edf2f7; }
+  .step { padding: 3px 6px; border-radius: 4px; cursor: pointer; font-size: 11px; }
+  .step:hover { background: #edf2f7; }
+  .contained { color: #22543d; } .blocked { color: #744210; } .propagated { color: #742a2a; }
+  button.small { padding: 1px 6px; font-size: 10px; }
+  #toast { position: fixed; bottom: 10px; right: 10px; background: #1a365d; color: #fff; padding: 6px 10px; border-radius: 4px; font-size: 12px; display: none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>ADCP 流束换算台</h1>
+  <button onclick="resetDemo()">重置并运行 90 秒样例</button>
+  <span class="mono" id="head" style="opacity:.85"></span>
+  <span style="flex:1"></span>
+  <a href="/api/export" download="adcp-evidence.json"><button>导出证据包</button></a>
+</header>
+<div class="layout">
+  <div class="col" id="left">
+    <div class="card"><h3>短样例路径（约 90 秒可看完）</h3><div id="steps"></div></div>
+    <div class="card"><h3>ping 列表</h3><div id="pings"></div></div>
+  </div>
+  <div class="col" id="center"></div>
+  <div class="col" id="right">
+    <div class="card"><h3>机器可读事件 / 判定</h3><div id="events"></div></div>
+    <div class="card"><h3>历史回放</h3>
+      <input id="histSeq" type="number" min="0" style="width:70px"/>
+      <button class="small" onclick="showHistory()">投影到该 seq</button>
+      <button class="small" onclick="loadState()">回到当前</button>
+      <div id="histInfo" class="mono" style="margin-top:6px"></div>
+    </div>
+  </div>
+</div>
+<div id="toast"></div>
+<script src="/static/app.js"></script>
+</body>
+</html>
+HTMLEOF'
+echo ok
