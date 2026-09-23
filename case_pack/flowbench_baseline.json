@@ -1,0 +1,2915 @@
+{
+  "attitude_gap_flags": [],
+  "attitude_samples": [
+    {
+      "heading_deg": 358.6,
+      "pitch_deg": 1.0,
+      "raw_unit": "deg",
+      "roll_deg": 0.65,
+      "time": 0.0
+    },
+    {
+      "heading_deg": 2.4,
+      "pitch_deg": 1.112928494679007,
+      "raw_unit": "deg",
+      "roll_deg": 0.6045060064020749,
+      "time": 1.0
+    },
+    {
+      "heading_deg": 6.1,
+      "pitch_deg": 1.1864078171934453,
+      "raw_unit": "deg",
+      "roll_deg": 0.4956200716548067,
+      "time": 2.0
+    },
+    {
+      "heading_deg": 10.0,
+      "pitch_deg": 1.194769526175639,
+      "raw_unit": "deg",
+      "roll_deg": 0.38939094266881313,
+      "time": 3.0
+    },
+    {
+      "heading_deg": 13.8,
+      "pitch_deg": 1.1350926361102303,
+      "raw_unit": "deg",
+      "roll_deg": 0.350255783630787,
+      "time": 4.0
+    },
+    {
+      "heading_deg": 17.6,
+      "pitch_deg": 1.0282240016119735,
+      "raw_unit": "deg",
+      "roll_deg": 0.4019534568704582,
+      "time": 5.0
+    },
+    {
+      "heading_deg": 40.0,
+      "pitch_deg": 1.0,
+      "raw_unit": "deg",
+      "roll_deg": 0.5,
+      "time": 33.0
+    }
+  ],
+  "case_id": "flowbench-baseline",
+  "config": {
+    "azimuths_deg": [
+      315.0,
+      45.0,
+      135.0,
+      225.0
+    ],
+    "beam_angle_deg": 20.0,
+    "declination_basis": "magnetic",
+    "declination_deg": -7.5,
+    "declination_version": "wmm-2024-v1",
+    "error_velocity_threshold": 0.05,
+    "gap_factor": 1.5,
+    "geometry_version": "adcp-janus-convex-v1",
+    "min_amplitude_db": 30.0,
+    "min_correlation": 64.0,
+    "mount_heading_deg": 0.0,
+    "mount_pitch_deg": 0.0,
+    "mount_roll_deg": 0.0,
+    "transform_order": "hpr-v1"
+  },
+  "description": "Janus 4-beam convex ADCP, separate raw records, forward-projected truth.",
+  "pings": [
+    {
+      "bottom_track": {
+        "amplitude_db": [
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          }
+        ],
+        "bad_beam_flag": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "beam_velocity": [
+          {
+            "raw": 7.3563,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": -21.0314,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": -11.6722,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": 16.7155,
+            "raw_unit": "cm/s"
+          }
+        ],
+        "correlation": [
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          }
+        ],
+        "range_m": [
+          {
+            "raw": 12.0,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.3,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.6,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.9,
+            "raw_unit": "m"
+          }
+        ],
+        "time": 0.5
+      },
+      "cells": {
+        "c00": {
+          "amplitude_db": [
+            {
+              "raw": 72.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 71.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 71.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 70.8,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": 0.9946,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.9341,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -6.2111,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.2823,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 180,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 179,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 178,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 177,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 2.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c01": {
+          "amplitude_db": [
+            {
+              "raw": 70.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.0,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -1.9349,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -1.7399,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -3.7011,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -3.8962,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 177,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 176,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 175,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 174,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 4.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c02": {
+          "amplitude_db": [
+            {
+              "raw": 68.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 68.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 67.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 67.2,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -4.5563,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -0.2393,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -0.8876,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -5.2046,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 174,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 173,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 172,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 171,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 6.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c03": {
+          "amplitude_db": [
+            {
+              "raw": 66.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 66.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 65.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 65.4,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -6.8557,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 1.5814,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 2.2432,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -6.1939,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 171,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 170,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 169,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 168,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 8.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c04": {
+          "amplitude_db": [
+            {
+              "raw": 64.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 64.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 64.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 63.6,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -8.9318,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 3.6241,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 5.594,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -6.9619,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 168,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 167,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 166,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 165,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 10.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        }
+      },
+      "id": "p000",
+      "time": 0.0
+    },
+    {
+      "bottom_track": {
+        "amplitude_db": [
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          }
+        ],
+        "bad_beam_flag": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "beam_velocity": [
+          {
+            "raw": 10.0979,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": -20.1521,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": -14.5558,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": 15.6942,
+            "raw_unit": "cm/s"
+          }
+        ],
+        "correlation": [
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          }
+        ],
+        "range_m": [
+          {
+            "raw": 12.0,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.3,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.6,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.9,
+            "raw_unit": "m"
+          }
+        ],
+        "time": 1.5
+      },
+      "cells": {
+        "c00": {
+          "amplitude_db": [
+            {
+              "raw": 72.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 71.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 71.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 70.8,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": 0.5295,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -3.1671,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -6.573,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.8763,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 180,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 179,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 178,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 177,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 2.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c01": {
+          "amplitude_db": [
+            {
+              "raw": 70.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.0,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -2.0053,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -1.677,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -3.5013,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -3.8296,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 177,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 176,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 175,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 174,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 4.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c02": {
+          "amplitude_db": [
+            {
+              "raw": 68.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 68.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 67.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 67.2,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -4.2547,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 0.097,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -0.1485,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -4.5003,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 174,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 173,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 172,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 171,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 6.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c03": {
+          "amplitude_db": [
+            {
+              "raw": 66.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 66.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 65.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 65.4,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -6.3627,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 2.0117,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 3.3434,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -5.031,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 171,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 170,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 169,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 168,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 8.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c04": {
+          "amplitude_db": [
+            {
+              "raw": 64.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 64.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 64.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 63.6,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -8.5229,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 3.8744,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 6.784,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -5.6133,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 168,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 167,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 166,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 165,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 10.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        }
+      },
+      "id": "p001",
+      "time": 1.0
+    },
+    {
+      "bottom_track": {
+        "amplitude_db": [
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          }
+        ],
+        "bad_beam_flag": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "beam_velocity": [
+          {
+            "raw": 10.5439,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": -20.3777,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": -14.7645,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": 16.1571,
+            "raw_unit": "cm/s"
+          }
+        ],
+        "correlation": [
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          }
+        ],
+        "range_m": [
+          {
+            "raw": 12.0,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.3,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.6,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.9,
+            "raw_unit": "m"
+          }
+        ],
+        "time": 2.5
+      },
+      "cells": {
+        "c00": {
+          "amplitude_db": [
+            {
+              "raw": 72.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 71.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 71.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 70.8,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": 0.8228,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.9386,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -6.2447,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.4833,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 180,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 179,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 178,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 177,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 2.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c01": {
+          "amplitude_db": [
+            {
+              "raw": 70.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.0,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -1.4088,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -1.2573,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.7295,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.8811,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 177,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 176,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 175,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 174,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 4.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c02": {
+          "amplitude_db": [
+            {
+              "raw": 68.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 68.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 67.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 67.2,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -3.5938,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 0.4704,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 0.8316,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -3.2326,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 174,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 173,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 172,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 171,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 6.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c03": {
+          "amplitude_db": [
+            {
+              "raw": 66.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 66.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 65.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 65.4,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -5.9251,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 2.0525,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 4.2487,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -3.7289,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 171,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 170,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 169,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 168,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 8.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c04": {
+          "amplitude_db": [
+            {
+              "raw": 64.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 64.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 64.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 63.6,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -8.5445,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 3.3477,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 7.3818,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -4.5104,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 168,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 167,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 166,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 165,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 10.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        }
+      },
+      "id": "p002",
+      "time": 2.0
+    },
+    {
+      "bottom_track": {
+        "amplitude_db": [
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          }
+        ],
+        "bad_beam_flag": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "beam_velocity": [
+          {
+            "raw": 12.9682,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": -18.771,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": -17.39,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": 14.3492,
+            "raw_unit": "cm/s"
+          }
+        ],
+        "correlation": [
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          }
+        ],
+        "range_m": [
+          {
+            "raw": 12.0,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.3,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.6,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.9,
+            "raw_unit": "m"
+          }
+        ],
+        "time": 3.5
+      },
+      "cells": {
+        "c00": {
+          "amplitude_db": [
+            {
+              "raw": 72.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 71.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 71.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 70.8,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": 1.7786,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.4684,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -5.6083,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -1.3613,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 180,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 179,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 178,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 177,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 2.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c01": {
+          "amplitude_db": [
+            {
+              "raw": 70.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.0,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -0.5261,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -0.9937,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.0377,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -1.57,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 177,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 176,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 175,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 174,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 4.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c02": {
+          "amplitude_db": [
+            {
+              "raw": 68.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 68.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 67.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 67.2,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -3.058,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 0.2544,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 1.3088,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.0036,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 174,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 173,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 172,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 171,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 6.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c03": {
+          "amplitude_db": [
+            {
+              "raw": 66.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 66.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 65.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 65.4,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -5.913,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 1.1807,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 4.3368,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.7569,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 171,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 170,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 169,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 168,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 8.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c04": {
+          "amplitude_db": [
+            {
+              "raw": 64.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 64.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 64.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 63.6,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -9.074,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 1.8019,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 7.0631,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -3.8128,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 168,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 167,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 166,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 165,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 10.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        }
+      },
+      "id": "p003",
+      "time": 3.0
+    },
+    {
+      "bottom_track": {
+        "amplitude_db": [
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          }
+        ],
+        "bad_beam_flag": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "beam_velocity": [
+          {
+            "raw": 12.9424,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": -18.7688,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": -17.3861,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": 14.3251,
+            "raw_unit": "cm/s"
+          }
+        ],
+        "correlation": [
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          }
+        ],
+        "range_m": [
+          {
+            "raw": 12.0,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.3,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.6,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.9,
+            "raw_unit": "m"
+          }
+        ],
+        "time": 4.5
+      },
+      "cells": {
+        "c00": {
+          "amplitude_db": [
+            {
+              "raw": 72.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 71.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 71.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 70.8,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": 2.794,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.2129,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -5.2695,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -0.2625,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 180,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 179,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 178,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 177,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 2.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c01": {
+          "amplitude_db": [
+            {
+              "raw": 70.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.0,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": 0.055,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -1.3188,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.0293,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -0.6555,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 177,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 176,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 175,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 174,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 4.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c02": {
+          "amplitude_db": [
+            {
+              "raw": 68.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 68.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 67.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 67.2,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -3.0131,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -0.7528,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 0.8861,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -1.3743,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 174,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 173,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 172,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 171,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 6.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c03": {
+          "amplitude_db": [
+            {
+              "raw": 66.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 66.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 65.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 65.4,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -6.3366,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -0.4413,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 3.5495,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.3457,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 171,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 170,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 169,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 168,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 8.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c04": {
+          "amplitude_db": [
+            {
+              "raw": 64.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 64.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 64.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 63.6,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -9.7523,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -0.2218,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 6.1219,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -3.4086,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 168,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 167,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 166,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 165,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 10.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        }
+      },
+      "id": "p004",
+      "time": 4.0
+    },
+    {
+      "bottom_track": {
+        "amplitude_db": [
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          },
+          {
+            "raw": 85.0,
+            "raw_unit": "dB"
+          }
+        ],
+        "bad_beam_flag": [
+          false,
+          false,
+          false,
+          false
+        ],
+        "beam_velocity": [
+          {
+            "raw": 13.6115,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": -17.7246,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": -18.3785,
+            "raw_unit": "cm/s"
+          },
+          {
+            "raw": 12.9576,
+            "raw_unit": "cm/s"
+          }
+        ],
+        "correlation": [
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          },
+          {
+            "raw": 190,
+            "raw_unit": "count"
+          }
+        ],
+        "range_m": [
+          {
+            "raw": 12.0,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.3,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.6,
+            "raw_unit": "m"
+          },
+          {
+            "raw": 12.9,
+            "raw_unit": "m"
+          }
+        ],
+        "time": 5.5
+      },
+      "cells": {
+        "c00": {
+          "amplitude_db": [
+            {
+              "raw": 72.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 71.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 71.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 70.8,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": 3.1915,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.4308,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -5.5838,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 0.0385,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 180,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 179,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 178,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 177,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 2.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c01": {
+          "amplitude_db": [
+            {
+              "raw": 70.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 69.0,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -0.0523,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.2034,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.7702,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -0.6191,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 177,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 176,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 175,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 174,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 4.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c02": {
+          "amplitude_db": [
+            {
+              "raw": 68.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 68.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 67.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 67.2,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -3.4779,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.1573,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -0.1362,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -1.4568,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 174,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 173,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 172,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 171,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 6.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c03": {
+          "amplitude_db": [
+            {
+              "raw": 66.6,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 66.2,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 65.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 65.4,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -6.898,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.1056,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 2.5033,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.2891,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 171,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 170,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 169,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 168,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 8.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        },
+        "c04": {
+          "amplitude_db": [
+            {
+              "raw": 64.8,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 64.4,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 64.0,
+              "raw_unit": "dB"
+            },
+            {
+              "raw": 63.6,
+              "raw_unit": "dB"
+            }
+          ],
+          "bad_beam_flag": [
+            false,
+            false,
+            false,
+            false
+          ],
+          "beam_velocity": [
+            {
+              "raw": -10.127,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -1.8636,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": 5.3314,
+              "raw_unit": "cm/s"
+            },
+            {
+              "raw": -2.9321,
+              "raw_unit": "cm/s"
+            }
+          ],
+          "correlation": [
+            {
+              "raw": 168,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 167,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 166,
+              "raw_unit": "count"
+            },
+            {
+              "raw": 165,
+              "raw_unit": "count"
+            }
+          ],
+          "depth_m": {
+            "raw": 10.0,
+            "raw_unit": "m"
+          },
+          "valid": true
+        }
+      },
+      "id": "p005",
+      "time": 5.0
+    }
+  ],
+  "schema": "adcp-flowbench-v1",
+  "title": "Flow Bench: ADCP beam velocities, attitude rotation and quality tiers",
+  "truth": [
+    {
+      "cell": "c00",
+      "depth_m": 2.0,
+      "earth_ENU": [
+        0.53,
+        0.18,
+        0.005646424733950354
+      ],
+      "ping": "p000"
+    },
+    {
+      "cell": "c01",
+      "depth_m": 4.0,
+      "earth_ENU": [
+        0.61,
+        0.14,
+        0.009320390859672264
+      ],
+      "ping": "p000"
+    },
+    {
+      "cell": "c02",
+      "depth_m": 6.0,
+      "earth_ENU": [
+        0.69,
+        0.10000000000000002,
+        0.009738476308781953
+      ],
+      "ping": "p000"
+    },
+    {
+      "cell": "c03",
+      "depth_m": 8.0,
+      "earth_ENU": [
+        0.77,
+        0.06000000000000001,
+        0.0067546318055115104
+      ],
+      "ping": "p000"
+    },
+    {
+      "cell": "c04",
+      "depth_m": 10.0,
+      "earth_ENU": [
+        0.8500000000000001,
+        0.02,
+        0.001411200080598672
+      ],
+      "ping": "p000"
+    },
+    {
+      "cell": "c00",
+      "depth_m": 2.0,
+      "earth_ENU": [
+        0.5493265306171308,
+        0.17755165123780747,
+        0.009974949866040545
+      ],
+      "ping": "p001"
+    },
+    {
+      "cell": "c01",
+      "depth_m": 4.0,
+      "earth_ENU": [
+        0.6293265306171307,
+        0.13755165123780747,
+        0.008632093666488738
+      ],
+      "ping": "p001"
+    },
+    {
+      "cell": "c02",
+      "depth_m": 6.0,
+      "earth_ENU": [
+        0.7093265306171307,
+        0.09755165123780747,
+        0.004273798802338301
+      ],
+      "ping": "p001"
+    },
+    {
+      "cell": "c03",
+      "depth_m": 8.0,
+      "earth_ENU": [
+        0.7893265306171308,
+        0.057551651237807464,
+        -0.0015774569414324822
+      ],
+      "ping": "p001"
+    },
+    {
+      "cell": "c04",
+      "depth_m": 10.0,
+      "earth_ENU": [
+        0.8693265306171308,
+        0.017551651237807456,
+        -0.006877661591839738
+      ],
+      "ping": "p001"
+    },
+    {
+      "cell": "c00",
+      "depth_m": 2.0,
+      "earth_ENU": [
+        0.5595634918996538,
+        0.1708060461173628,
+        0.0067546318055115104
+      ],
+      "ping": "p002"
+    },
+    {
+      "cell": "c01",
+      "depth_m": 4.0,
+      "earth_ENU": [
+        0.6395634918996538,
+        0.1308060461173628,
+        0.001411200080598672
+      ],
+      "ping": "p002"
+    },
+    {
+      "cell": "c02",
+      "depth_m": 6.0,
+      "earth_ENU": [
+        0.7195634918996537,
+        0.09080604611736282,
+        -0.004425204432948521
+      ],
+      "ping": "p002"
+    },
+    {
+      "cell": "c03",
+      "depth_m": 8.0,
+      "earth_ENU": [
+        0.7995634918996538,
+        0.05080604611736281,
+        -0.008715757724135883
+      ],
+      "ping": "p002"
+    },
+    {
+      "cell": "c04",
+      "depth_m": 10.0,
+      "earth_ENU": [
+        0.8795634918996539,
+        0.010806046117362796,
+        -0.009961646088358407
+      ],
+      "ping": "p002"
+    },
+    {
+      "cell": "c00",
+      "depth_m": 2.0,
+      "earth_ENU": [
+        0.5558962809994662,
+        0.16141474403335407,
+        -0.0015774569414324865
+      ],
+      "ping": "p003"
+    },
+    {
+      "cell": "c01",
+      "depth_m": 4.0,
+      "earth_ENU": [
+        0.6358962809994662,
+        0.12141474403335406,
+        -0.0068776615918397415
+      ],
+      "ping": "p003"
+    },
+    {
+      "cell": "c02",
+      "depth_m": 6.0,
+      "earth_ENU": [
+        0.7158962809994661,
+        0.08141474403335408,
+        -0.00977530117665097
+      ],
+      "ping": "p003"
+    },
+    {
+      "cell": "c03",
+      "depth_m": 8.0,
+      "earth_ENU": [
+        0.7958962809994662,
+        0.041414744033354066,
+        -0.009258146823277325
+      ],
+      "ping": "p003"
+    },
+    {
+      "cell": "c04",
+      "depth_m": 10.0,
+      "earth_ENU": [
+        0.8758962809994663,
+        0.0014147440333540581,
+        -0.005506855425976376
+      ],
+      "ping": "p003"
+    },
+    {
+      "cell": "c00",
+      "depth_m": 2.0,
+      "earth_ENU": [
+        0.5400496445046772,
+        0.15167706326905717,
+        -0.008715757724135883
+      ],
+      "ping": "p004"
+    },
+    {
+      "cell": "c01",
+      "depth_m": 4.0,
+      "earth_ENU": [
+        0.6200496445046771,
+        0.11167706326905716,
+        -0.009961646088358407
+      ],
+      "ping": "p004"
+    },
+    {
+      "cell": "c02",
+      "depth_m": 6.0,
+      "earth_ENU": [
+        0.7000496445046771,
+        0.07167706326905716,
+        -0.007727644875559872
+      ],
+      "ping": "p004"
+    },
+    {
+      "cell": "c03",
+      "depth_m": 8.0,
+      "earth_ENU": [
+        0.7800496445046772,
+        0.03167706326905716,
+        -0.0027941549819892587
+      ],
+      "ping": "p004"
+    },
+    {
+      "cell": "c04",
+      "depth_m": 10.0,
+      "earth_ENU": [
+        0.8600496445046772,
+        -0.008322936730942847,
+        0.0031154136351337785
+      ],
+      "ping": "p004"
+    },
+    {
+      "cell": "c00",
+      "depth_m": 2.0,
+      "earth_ENU": [
+        0.5194765031693114,
+        0.14397712768906132,
+        -0.009258146823277325
+      ],
+      "ping": "p005"
+    },
+    {
+      "cell": "c01",
+      "depth_m": 4.0,
+      "earth_ENU": [
+        0.5994765031693114,
+        0.10397712768906134,
+        -0.005506855425976376
+      ],
+      "ping": "p005"
+    },
+    {
+      "cell": "c02",
+      "depth_m": 6.0,
+      "earth_ENU": [
+        0.6794765031693113,
+        0.06397712768906134,
+        0.00016813900484349714
+      ],
+      "ping": "p005"
+    },
+    {
+      "cell": "c03",
+      "depth_m": 8.0,
+      "earth_ENU": [
+        0.7594765031693114,
+        0.023977127689061333,
+        0.0057843976438820026
+      ],
+      "ping": "p005"
+    },
+    {
+      "cell": "c04",
+      "depth_m": 10.0,
+      "earth_ENU": [
+        0.8394765031693114,
+        -0.016022872310938675,
+        0.00937999976774739
+      ],
+      "ping": "p005"
+    }
+  ]
+}
