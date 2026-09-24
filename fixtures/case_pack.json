@@ -1,0 +1,5429 @@
+{
+  "case_id": "beam-reduction-bench-v1",
+  "title": "流束换算台：ADCP 波束速度、姿态旋转与质量层级",
+  "version": "1.0.0",
+  "config": {
+    "cell_size_m": 1.0,
+    "blanking_m": 0.5,
+    "n_cells": 12,
+    "gap_max_spacing_s": 6.0
+  },
+  "sources": {
+    "geometry": {
+      "geometry_id": "geom-v1",
+      "beam_angle_deg": 20.0
+    },
+    "mount_angle": {
+      "version_id": "mount-v1",
+      "angle_deg": 0.0
+    },
+    "declination": {
+      "version_id": "decl-v1",
+      "angle_deg": 7.0,
+      "convention": "true = magnetic + declination(east-positive)"
+    },
+    "quality_thresholds": {
+      "threshold_id": "qc-v1",
+      "corr_min": 64,
+      "corr_marginal": 80,
+      "amp_min_db": 6.0
+    },
+    "transform_order": {
+      "version_id": "order-v1",
+      "order": "hpr-v1"
+    },
+    "ping_gaps": [
+      {
+        "gap_id": "pgap-v1",
+        "t0_s": 28.0,
+        "t1_s": 40.0
+      }
+    ],
+    "attitude_gaps": [],
+    "attitude": [
+      {
+        "att_id": "a00",
+        "t_s": -2.0,
+        "heading_raw": "336.00",
+        "heading_unit": "deg",
+        "heading_datum": "magnetic",
+        "pitch_raw": "2.012",
+        "pitch_unit": "deg",
+        "roll_raw": "-1.108",
+        "roll_unit": "deg"
+      },
+      {
+        "att_id": "a01",
+        "t_s": 2.0,
+        "heading_raw": "344.00",
+        "heading_unit": "deg",
+        "heading_datum": "magnetic",
+        "pitch_raw": "2.188",
+        "pitch_unit": "deg",
+        "roll_raw": "-1.108",
+        "roll_unit": "deg"
+      },
+      {
+        "att_id": "a02",
+        "t_s": 6.0,
+        "heading_raw": "352.00",
+        "heading_unit": "deg",
+        "heading_datum": "magnetic",
+        "pitch_raw": "2.347",
+        "pitch_unit": "deg",
+        "roll_raw": "-1.169",
+        "roll_unit": "deg"
+      },
+      {
+        "att_id": "a03",
+        "t_s": 10.0,
+        "heading_raw": "0.00",
+        "heading_unit": "deg",
+        "heading_datum": "magnetic",
+        "pitch_raw": "2.458",
+        "pitch_unit": "deg",
+        "roll_raw": "-1.272",
+        "roll_unit": "deg"
+      },
+      {
+        "att_id": "a04",
+        "t_s": 14.0,
+        "heading_raw": "8.00",
+        "heading_unit": "deg",
+        "heading_datum": "magnetic",
+        "pitch_raw": "2.500",
+        "pitch_unit": "deg",
+        "roll_raw": "-1.383",
+        "roll_unit": "deg"
+      },
+      {
+        "att_id": "a05",
+        "t_s": 18.0,
+        "heading_raw": "16.00",
+        "heading_unit": "deg",
+        "heading_datum": "magnetic",
+        "pitch_raw": "2.464",
+        "pitch_unit": "deg",
+        "roll_raw": "-1.468",
+        "roll_unit": "deg"
+      },
+      {
+        "att_id": "a06",
+        "t_s": 22.0,
+        "heading_raw": "24.00",
+        "heading_unit": "deg",
+        "heading_datum": "magnetic",
+        "pitch_raw": "2.357",
+        "pitch_unit": "deg",
+        "roll_raw": "-1.500",
+        "roll_unit": "deg"
+      },
+      {
+        "att_id": "a07",
+        "t_s": 26.0,
+        "heading_raw": "32.00",
+        "heading_unit": "deg",
+        "heading_datum": "magnetic",
+        "pitch_raw": "2.200",
+        "pitch_unit": "deg",
+        "roll_raw": "-1.468",
+        "roll_unit": "deg"
+      },
+      {
+        "att_id": "a08",
+        "t_s": 30.0,
+        "heading_raw": "40.00",
+        "heading_unit": "deg",
+        "heading_datum": "magnetic",
+        "pitch_raw": "2.024",
+        "pitch_unit": "deg",
+        "roll_raw": "-1.383",
+        "roll_unit": "deg"
+      },
+      {
+        "att_id": "a09",
+        "t_s": 34.0,
+        "heading_raw": "48.00",
+        "heading_unit": "deg",
+        "heading_datum": "magnetic",
+        "pitch_raw": "1.862",
+        "pitch_unit": "deg",
+        "roll_raw": "-1.271",
+        "roll_unit": "deg"
+      },
+      {
+        "att_id": "a10",
+        "t_s": 38.0,
+        "heading_raw": "56.00",
+        "heading_unit": "deg",
+        "heading_datum": "magnetic",
+        "pitch_raw": "1.747",
+        "pitch_unit": "deg",
+        "roll_raw": "-1.169",
+        "roll_unit": "deg"
+      },
+      {
+        "att_id": "a11",
+        "t_s": 42.0,
+        "heading_raw": "64.00",
+        "heading_unit": "deg",
+        "heading_datum": "magnetic",
+        "pitch_raw": "1.700",
+        "pitch_unit": "deg",
+        "roll_raw": "-1.108",
+        "roll_unit": "deg"
+      }
+    ],
+    "pings": [
+      {
+        "ping_id": "p01",
+        "t_s": 0.0,
+        "cells": [
+          {
+            "cell_no": 1,
+            "centre_m": 1.0,
+            "beam_velocity": {
+              "values": [
+                "92",
+                "-82",
+                "80",
+                "-70"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "96",
+                "97",
+                "106",
+                "104"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "91.5",
+                "92.2",
+                "92.0",
+                "92.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 2,
+            "centre_m": 2.0,
+            "beam_velocity": {
+              "values": [
+                "90",
+                "-82",
+                "75",
+                "-66"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "101",
+                "102",
+                "110"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "88.5",
+                "89.4",
+                "88.8",
+                "89.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 3,
+            "centre_m": 3.0,
+            "beam_velocity": {
+              "values": [
+                "88",
+                "-82",
+                "69",
+                "-63"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "111",
+                "100",
+                "97",
+                "97"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "85.5",
+                "85.3",
+                "85.7",
+                "85.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 4,
+            "centre_m": 4.0,
+            "beam_velocity": {
+              "values": [
+                "86",
+                "-82",
+                "64",
+                "-60"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "104",
+                "97",
+                "97"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "83.2",
+                "82.8",
+                "82.6",
+                "82.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 5,
+            "centre_m": 5.0,
+            "beam_velocity": {
+              "values": [
+                "84",
+                "-82",
+                "59",
+                "-56"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "96",
+                "107",
+                "108",
+                "110"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "79.2",
+                "80.2",
+                "79.8",
+                "79.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 6,
+            "centre_m": 6.0,
+            "beam_velocity": {
+              "values": [
+                "82",
+                "-81",
+                "54",
+                "-53"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "110",
+                "111",
+                "112",
+                "105"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "76.9",
+                "76.2",
+                "77.1",
+                "76.0"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 7,
+            "centre_m": 7.0,
+            "beam_velocity": {
+              "values": [
+                "81",
+                "-81",
+                "49",
+                "-50"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "96",
+                "99",
+                "102",
+                "96"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "73.4",
+                "73.9",
+                "73.1",
+                "73.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 8,
+            "centre_m": 8.0,
+            "beam_velocity": {
+              "values": [
+                "79",
+                "-81",
+                "44",
+                "-47"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "110",
+                "97",
+                "108",
+                "101"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "69.8",
+                "69.8",
+                "70.0",
+                "70.2"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 9,
+            "centre_m": 9.0,
+            "beam_velocity": {
+              "values": [
+                "77",
+                "-81",
+                "39",
+                "-43"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "107",
+                "103",
+                "102",
+                "104"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "66.9",
+                "67.3",
+                "67.7",
+                "67.8"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 10,
+            "centre_m": 10.0,
+            "beam_velocity": {
+              "values": [
+                "75",
+                "-81",
+                "34",
+                "-40"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "102",
+                "99",
+                "95",
+                "105"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "64.3",
+                "64.7",
+                "64.4",
+                "64.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 11,
+            "centre_m": 11.0,
+            "beam_velocity": {
+              "values": [
+                "73",
+                "-81",
+                "29",
+                "-37"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "105",
+                "107",
+                "95",
+                "96"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "60.6",
+                "60.9",
+                "61.3",
+                "61.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 12,
+            "centre_m": 12.0,
+            "beam_velocity": {
+              "values": [
+                "71",
+                "-81",
+                "23",
+                "-33"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "102",
+                "110",
+                "110",
+                "101"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "57.8",
+                "58.4",
+                "57.6",
+                "58.1"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          }
+        ],
+        "bottom_track": {
+          "range": {
+            "values": [
+              "21.28",
+              "21.28",
+              "21.28",
+              "21.28"
+            ],
+            "unit": "m"
+          },
+          "range_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "beam_velocity": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "unit": "mm/s"
+          },
+          "velocity_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        }
+      },
+      {
+        "ping_id": "p02",
+        "t_s": 4.0,
+        "cells": [
+          {
+            "cell_no": 1,
+            "centre_m": 1.0,
+            "beam_velocity": {
+              "values": [
+                "103",
+                "-90",
+                "69",
+                "-55"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "108",
+                "101",
+                "103",
+                "95"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "92.3",
+                "91.5",
+                "92.5",
+                "91.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 2,
+            "centre_m": 2.0,
+            "beam_velocity": {
+              "values": [
+                "101",
+                "-89",
+                "64",
+                "-52"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "105",
+                "98",
+                "99"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "88.3",
+                "88.4",
+                "88.6",
+                "88.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 3,
+            "centre_m": 3.0,
+            "beam_velocity": {
+              "values": [
+                "98",
+                "-88",
+                "59",
+                "-49"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "101",
+                "103",
+                "95",
+                "97"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "86.0",
+                "85.4",
+                "85.7",
+                "85.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 4,
+            "centre_m": 4.0,
+            "beam_velocity": {
+              "values": [
+                "96",
+                "-88",
+                "54",
+                "-46"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "111",
+                "104",
+                "98"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "82.7",
+                "82.3",
+                "82.5",
+                "82.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 5,
+            "centre_m": 5.0,
+            "beam_velocity": {
+              "values": [
+                "93",
+                "-87",
+                "49",
+                "-43"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "97",
+                "98",
+                "103",
+                "99"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "79.7",
+                "79.1",
+                "79.5",
+                "79.1"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 6,
+            "centre_m": 6.0,
+            "beam_velocity": {
+              "values": [
+                "91",
+                "-87",
+                "44",
+                "-40"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "110",
+                "104",
+                "111",
+                "106"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "76.5",
+                "76.8",
+                "76.6",
+                "76.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 7,
+            "centre_m": 7.0,
+            "beam_velocity": {
+              "values": [
+                "88",
+                "-86",
+                "39",
+                "-37"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "103",
+                "112",
+                "106",
+                "112"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "72.9",
+                "73.5",
+                "73.1",
+                "73.2"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 8,
+            "centre_m": 8.0,
+            "beam_velocity": {
+              "values": [
+                "86",
+                "-85",
+                "34",
+                "-34"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "107",
+                "98",
+                "106",
+                "101"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "69.8",
+                "70.1",
+                "70.0",
+                "70.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 9,
+            "centre_m": 9.0,
+            "beam_velocity": {
+              "values": [
+                "83",
+                "-85",
+                "29",
+                "-30"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "103",
+                "110",
+                "109",
+                "100"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "66.6",
+                "67.3",
+                "67.5",
+                "67.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 10,
+            "centre_m": 10.0,
+            "beam_velocity": {
+              "values": [
+                "81",
+                "-84",
+                "24",
+                "-27"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "111",
+                "100",
+                "112",
+                "95"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "64.0",
+                "64.2",
+                "63.9",
+                "64.1"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 11,
+            "centre_m": 11.0,
+            "beam_velocity": {
+              "values": [
+                "78",
+                "-84",
+                "19",
+                "-24"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "111",
+                "102",
+                "96",
+                "109"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "61.4",
+                "61.1",
+                "61.5",
+                "61.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 12,
+            "centre_m": 12.0,
+            "beam_velocity": {
+              "values": [
+                "75",
+                "-83",
+                "14",
+                "-21"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "110",
+                "99",
+                "95",
+                "103"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "57.8",
+                "58.2",
+                "57.8",
+                "57.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          }
+        ],
+        "bottom_track": {
+          "range": {
+            "values": [
+              "21.28",
+              "21.28",
+              "21.28",
+              "21.28"
+            ],
+            "unit": "m"
+          },
+          "range_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "beam_velocity": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "unit": "mm/s"
+          },
+          "velocity_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        }
+      },
+      {
+        "ping_id": "p03",
+        "t_s": 8.0,
+        "cells": [
+          {
+            "cell_no": 1,
+            "centre_m": 1.0,
+            "beam_velocity": {
+              "values": [
+                "113",
+                "-95",
+                "57",
+                "-39"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "104",
+                "103",
+                "108"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "91.8",
+                "92.2",
+                "92.2",
+                "91.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 2,
+            "centre_m": 2.0,
+            "beam_velocity": {
+              "values": [
+                "110",
+                "-94",
+                "52",
+                "-36"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "98",
+                "98",
+                "102",
+                "110"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "88.4",
+                "88.6",
+                "89.0",
+                "88.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 3,
+            "centre_m": 3.0,
+            "beam_velocity": {
+              "values": [
+                "107",
+                "-93",
+                "47",
+                "-33"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "112",
+                "96",
+                "98",
+                "103"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "85.4",
+                "85.3",
+                "85.7",
+                "86.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 4,
+            "centre_m": 4.0,
+            "beam_velocity": {
+              "values": [
+                "104",
+                "-92",
+                "42",
+                "-31"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "109",
+                "101",
+                "106",
+                "107"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "83.0",
+                "82.2",
+                "82.8",
+                "82.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 5,
+            "centre_m": 5.0,
+            "beam_velocity": {
+              "values": [
+                "101",
+                "-91",
+                "38",
+                "-28"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "109",
+                "106",
+                "104",
+                "104"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "80.1",
+                "79.8",
+                "79.9",
+                "79.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 6,
+            "centre_m": 6.0,
+            "beam_velocity": {
+              "values": [
+                "97",
+                "-90",
+                "33",
+                "-25"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "102",
+                "110",
+                "99",
+                "105"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "76.4",
+                "77.0",
+                "76.7",
+                "75.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 7,
+            "centre_m": 7.0,
+            "beam_velocity": {
+              "values": [
+                "94",
+                "-89",
+                "28",
+                "-22"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "111",
+                "99",
+                "103",
+                "107"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "73.6",
+                "73.5",
+                "73.9",
+                "73.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 8,
+            "centre_m": 8.0,
+            "beam_velocity": {
+              "values": [
+                "91",
+                "-88",
+                "23",
+                "-20"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "110",
+                "105",
+                "109",
+                "103"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "70.7",
+                "70.6",
+                "69.7",
+                "70.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 9,
+            "centre_m": 9.0,
+            "beam_velocity": {
+              "values": [
+                "88",
+                "-87",
+                "18",
+                "-17"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "108",
+                "107",
+                "100",
+                "111"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "66.9",
+                "67.1",
+                "66.6",
+                "67.0"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 10,
+            "centre_m": 10.0,
+            "beam_velocity": {
+              "values": [
+                "85",
+                "-86",
+                "13",
+                "-14"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "97",
+                "108",
+                "106",
+                "112"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "64.3",
+                "63.6",
+                "64.7",
+                "63.8"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 11,
+            "centre_m": 11.0,
+            "beam_velocity": {
+              "values": [
+                "81",
+                "-84",
+                "9",
+                "-12"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "95",
+                "98",
+                "101",
+                "109"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "61.3",
+                "61.5",
+                "60.6",
+                "61.2"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 12,
+            "centre_m": 12.0,
+            "beam_velocity": {
+              "values": [
+                "78",
+                "-83",
+                "4",
+                "-9"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "97",
+                "95",
+                "104",
+                "100"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "57.8",
+                "57.5",
+                "58.5",
+                "58.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          }
+        ],
+        "bottom_track": {
+          "range": {
+            "values": [
+              "21.28",
+              "21.28",
+              "21.28",
+              "21.28"
+            ],
+            "unit": "m"
+          },
+          "range_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "beam_velocity": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "unit": "mm/s"
+          },
+          "velocity_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        }
+      },
+      {
+        "ping_id": "p04",
+        "t_s": 12.0,
+        "cells": [
+          {
+            "cell_no": 1,
+            "centre_m": 1.0,
+            "beam_velocity": {
+              "values": [
+                "121",
+                "-99",
+                "44",
+                "-22"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "108",
+                "100",
+                "110",
+                "109"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "91.4",
+                "91.7",
+                "92.6",
+                "91.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 2,
+            "centre_m": 2.0,
+            "beam_velocity": {
+              "values": [
+                "117",
+                "-97",
+                "39",
+                "-19"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "108",
+                "102",
+                "107",
+                "103"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "89.5",
+                "88.5",
+                "89.3",
+                "88.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 3,
+            "centre_m": 3.0,
+            "beam_velocity": {
+              "values": [
+                "113",
+                "-96",
+                "35",
+                "-17"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "105",
+                "96",
+                "96"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "86.1",
+                "85.2",
+                "86.2",
+                "85.8"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 4,
+            "centre_m": 4.0,
+            "beam_velocity": {
+              "values": [
+                "110",
+                "-94",
+                "30",
+                "-15"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "95",
+                "102",
+                "107",
+                "95"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "83.1",
+                "83.0",
+                "83.2",
+                "82.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 5,
+            "centre_m": 5.0,
+            "beam_velocity": {
+              "values": [
+                "106",
+                "-93",
+                "26",
+                "-13"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "109",
+                "100",
+                "108",
+                "109"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "79.1",
+                "79.6",
+                "79.9",
+                "79.2"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 6,
+            "centre_m": 6.0,
+            "beam_velocity": {
+              "values": [
+                "102",
+                "-91",
+                "21",
+                "-10"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "107",
+                "106",
+                "111",
+                "109"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "76.4",
+                "76.2",
+                "76.4",
+                "76.2"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 7,
+            "centre_m": 7.0,
+            "beam_velocity": {
+              "values": [
+                "98",
+                "-90",
+                "16",
+                "-8"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "107",
+                "112",
+                "110",
+                "108"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "73.1",
+                "73.9",
+                "73.3",
+                "73.0"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 8,
+            "centre_m": 8.0,
+            "beam_velocity": {
+              "values": [
+                "94",
+                "-88",
+                "12",
+                "-6"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "102",
+                "111",
+                "111",
+                "112"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "69.9",
+                "70.6",
+                "70.7",
+                "70.2"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 9,
+            "centre_m": 9.0,
+            "beam_velocity": {
+              "values": [
+                "91",
+                "-87",
+                "7",
+                "-3"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "100",
+                "100",
+                "107",
+                "98"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "67.6",
+                "67.3",
+                "67.0",
+                "67.0"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 10,
+            "centre_m": 10.0,
+            "beam_velocity": {
+              "values": [
+                "87",
+                "-85",
+                "3",
+                "-1"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "104",
+                "107",
+                "103",
+                "100"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "64.2",
+                "63.8",
+                "63.9",
+                "64.1"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 11,
+            "centre_m": 11.0,
+            "beam_velocity": {
+              "values": [
+                "83",
+                "-84",
+                "-2",
+                "1"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "106",
+                "100",
+                "110",
+                "106"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "61.2",
+                "61.5",
+                "60.7",
+                "61.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 12,
+            "centre_m": 12.0,
+            "beam_velocity": {
+              "values": [
+                "79",
+                "-83",
+                "-7",
+                "3"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "98",
+                "95",
+                "96",
+                "104"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "58.0",
+                "58.0",
+                "58.3",
+                "58.2"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          }
+        ],
+        "bottom_track": {
+          "range": {
+            "values": [
+              "21.28",
+              "21.28",
+              "21.28",
+              "21.28"
+            ],
+            "unit": "m"
+          },
+          "range_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "beam_velocity": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "unit": "mm/s"
+          },
+          "velocity_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        }
+      },
+      {
+        "ping_id": "p05",
+        "t_s": 16.0,
+        "cells": [
+          {
+            "cell_no": 1,
+            "centre_m": 1.0,
+            "beam_velocity": {
+              "values": [
+                "126",
+                "-101",
+                "30",
+                "-5"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "109",
+                "110",
+                "101",
+                "110"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "92.5",
+                "92.4",
+                "91.5",
+                "91.8"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 2,
+            "centre_m": 2.0,
+            "beam_velocity": {
+              "values": [
+                "122",
+                "-99",
+                "26",
+                "-3"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "102",
+                "95",
+                "106",
+                "104"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "88.7",
+                "89.2",
+                "89.4",
+                "89.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 3,
+            "centre_m": 3.0,
+            "beam_velocity": {
+              "values": [
+                "117",
+                "-97",
+                "21",
+                "-1"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "101",
+                "98",
+                "96",
+                "108"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "85.9",
+                "86.0",
+                "85.6",
+                "85.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 4,
+            "centre_m": 4.0,
+            "beam_velocity": {
+              "values": [
+                "113",
+                "-95",
+                "17",
+                "1"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "110",
+                "111",
+                "109",
+                "108"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "82.9",
+                "82.7",
+                "82.8",
+                "82.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 5,
+            "centre_m": 5.0,
+            "beam_velocity": {
+              "values": [
+                "109",
+                "-93",
+                "13",
+                "3"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "103",
+                "108",
+                "95",
+                "105"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "79.4",
+                "79.2",
+                "79.3",
+                "80.2"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 6,
+            "centre_m": 6.0,
+            "beam_velocity": {
+              "values": [
+                "104",
+                "-92",
+                "8",
+                "4"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "111",
+                "100",
+                "97",
+                "102"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "76.0",
+                "76.8",
+                "76.1",
+                "75.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 7,
+            "centre_m": 7.0,
+            "beam_velocity": {
+              "values": [
+                "100",
+                "-90",
+                "4",
+                "6"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "107",
+                "108",
+                "106",
+                "104"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "73.3",
+                "73.2",
+                "73.9",
+                "72.8"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 8,
+            "centre_m": 8.0,
+            "beam_velocity": {
+              "values": [
+                "96",
+                "-88",
+                "0",
+                "8"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "105",
+                "97",
+                "102",
+                "108"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "70.0",
+                "70.0",
+                "70.4",
+                "70.1"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 9,
+            "centre_m": 9.0,
+            "beam_velocity": {
+              "values": [
+                "91",
+                "-86",
+                "-4",
+                "10"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "95",
+                "95",
+                "110",
+                "103"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "66.8",
+                "67.7",
+                "67.4",
+                "66.8"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 10,
+            "centre_m": 10.0,
+            "beam_velocity": {
+              "values": [
+                "87",
+                "-84",
+                "-9",
+                "12"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "106",
+                "112",
+                "104",
+                "100"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "64.6",
+                "64.1",
+                "64.6",
+                "63.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 11,
+            "centre_m": 11.0,
+            "beam_velocity": {
+              "values": [
+                "83",
+                "-82",
+                "-13",
+                "13"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "108",
+                "100",
+                "96",
+                "105"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "61.3",
+                "61.1",
+                "60.4",
+                "60.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 12,
+            "centre_m": 12.0,
+            "beam_velocity": {
+              "values": [
+                "78",
+                "-81",
+                "-17",
+                "15"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "102",
+                "105",
+                "101",
+                "96"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "57.3",
+                "58.3",
+                "58.0",
+                "57.8"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          }
+        ],
+        "bottom_track": {
+          "range": {
+            "values": [
+              "21.28",
+              "21.28",
+              "21.28",
+              "21.28"
+            ],
+            "unit": "m"
+          },
+          "range_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "beam_velocity": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "unit": "mm/s"
+          },
+          "velocity_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        }
+      },
+      {
+        "ping_id": "p06",
+        "t_s": 20.0,
+        "cells": [
+          {
+            "cell_no": 1,
+            "centre_m": 1.0,
+            "beam_velocity": {
+              "values": [
+                "128",
+                "-101",
+                "15",
+                "12"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "96",
+                "106",
+                "102",
+                "110"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "91.5",
+                "91.5",
+                "91.9",
+                "91.6"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 2,
+            "centre_m": 2.0,
+            "beam_velocity": {
+              "values": [
+                "123",
+                "-99",
+                "11",
+                "13"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "97",
+                "107",
+                "106",
+                "105"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "88.9",
+                "88.8",
+                "88.4",
+                "88.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 3,
+            "centre_m": 3.0,
+            "beam_velocity": {
+              "values": [
+                "118",
+                "-97",
+                "7",
+                "15"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "110",
+                "112",
+                "101",
+                "103"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "85.7",
+                "86.2",
+                "85.8",
+                "85.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 4,
+            "centre_m": 4.0,
+            "beam_velocity": {
+              "values": [
+                "113",
+                "-95",
+                "3",
+                "16"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "98",
+                "108",
+                "101",
+                "112"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "82.4",
+                "83.2",
+                "83.1",
+                "82.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 5,
+            "centre_m": 5.0,
+            "beam_velocity": {
+              "values": [
+                "109",
+                "-93",
+                "-1",
+                "17"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "112",
+                "102",
+                "110",
+                "109"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "79.9",
+                "79.1",
+                "79.9",
+                "79.1"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 6,
+            "centre_m": 6.0,
+            "beam_velocity": {
+              "values": [
+                "104",
+                "-91",
+                "-5",
+                "18"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "97",
+                "99",
+                "99",
+                "111"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "76.4",
+                "76.7",
+                "77.1",
+                "76.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 7,
+            "centre_m": 7.0,
+            "beam_velocity": {
+              "values": [
+                "99",
+                "-88",
+                "-9",
+                "20"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "103",
+                "99",
+                "103",
+                "101"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "73.0",
+                "74.0",
+                "73.8",
+                "73.0"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 8,
+            "centre_m": 8.0,
+            "beam_velocity": {
+              "values": [
+                "94",
+                "-86",
+                "-13",
+                "21"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "110",
+                "107",
+                "105",
+                "98"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "70.5",
+                "70.2",
+                "70.3",
+                "70.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 9,
+            "centre_m": 9.0,
+            "beam_velocity": {
+              "values": [
+                "90",
+                "-84",
+                "-17",
+                "22"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "96",
+                "103",
+                "96",
+                "111"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "67.5",
+                "66.9",
+                "67.2",
+                "67.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 10,
+            "centre_m": 10.0,
+            "beam_velocity": {
+              "values": [
+                "85",
+                "-82",
+                "-20",
+                "23"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "105",
+                "100",
+                "112"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "63.7",
+                "64.7",
+                "64.7",
+                "63.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 11,
+            "centre_m": 11.0,
+            "beam_velocity": {
+              "values": [
+                "80",
+                "-80",
+                "-24",
+                "25"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "107",
+                "103",
+                "96",
+                "109"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "61.4",
+                "60.5",
+                "61.5",
+                "61.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 12,
+            "centre_m": 12.0,
+            "beam_velocity": {
+              "values": [
+                "75",
+                "-78",
+                "-28",
+                "26"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "95",
+                "105",
+                "110",
+                "101"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "57.4",
+                "57.9",
+                "58.5",
+                "58.0"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          }
+        ],
+        "bottom_track": {
+          "range": {
+            "values": [
+              "21.28",
+              "21.28",
+              "21.28",
+              "21.28"
+            ],
+            "unit": "m"
+          },
+          "range_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "beam_velocity": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "unit": "mm/s"
+          },
+          "velocity_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        }
+      },
+      {
+        "ping_id": "p07",
+        "t_s": 24.0,
+        "cells": [
+          {
+            "cell_no": 1,
+            "centre_m": 1.0,
+            "beam_velocity": {
+              "values": [
+                "127",
+                "-101",
+                "-2",
+                "28"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "112",
+                "103",
+                "104",
+                "106"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "92.4",
+                "92.3",
+                "92.4",
+                "92.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 2,
+            "centre_m": 2.0,
+            "beam_velocity": {
+              "values": [
+                "122",
+                "-98",
+                "-5",
+                "28"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "102",
+                "97",
+                "112"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "88.8",
+                "89.5",
+                "88.5",
+                "88.6"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 3,
+            "centre_m": 3.0,
+            "beam_velocity": {
+              "values": [
+                "116",
+                "-96",
+                "-9",
+                "29"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "97",
+                "108",
+                "105",
+                "104"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "85.9",
+                "85.4",
+                "86.1",
+                "85.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 4,
+            "centre_m": 4.0,
+            "beam_velocity": {
+              "values": [
+                "111",
+                "-93",
+                "-12",
+                "30"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "108",
+                "106",
+                "111",
+                "101"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "82.5",
+                "82.7",
+                "83.2",
+                "82.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 5,
+            "centre_m": 5.0,
+            "beam_velocity": {
+              "values": [
+                "106",
+                "-91",
+                "-15",
+                "31"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "112",
+                "107",
+                "103",
+                "102"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "79.6",
+                "79.6",
+                "79.9",
+                "80.0"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 6,
+            "centre_m": 6.0,
+            "beam_velocity": {
+              "values": [
+                "101",
+                "-88",
+                "-19",
+                "31"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "111",
+                "108",
+                "98",
+                "104"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "76.3",
+                "76.4",
+                "76.1",
+                "76.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 7,
+            "centre_m": 7.0,
+            "beam_velocity": {
+              "values": [
+                "96",
+                "-86",
+                "-22",
+                "32"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "97",
+                "111",
+                "99",
+                "97"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "73.8",
+                "73.9",
+                "73.3",
+                "73.2"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 8,
+            "centre_m": 8.0,
+            "beam_velocity": {
+              "values": [
+                "91",
+                "-84",
+                "-26",
+                "33"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "95",
+                "102",
+                "103",
+                "104"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "69.8",
+                "70.4",
+                "69.8",
+                "70.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 9,
+            "centre_m": 9.0,
+            "beam_velocity": {
+              "values": [
+                "85",
+                "-81",
+                "-29",
+                "33"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "97",
+                "99",
+                "112",
+                "95"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "67.2",
+                "67.7",
+                "67.7",
+                "66.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 10,
+            "centre_m": 10.0,
+            "beam_velocity": {
+              "values": [
+                "80",
+                "-79",
+                "-33",
+                "34"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "106",
+                "109",
+                "102",
+                "112"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "63.6",
+                "63.9",
+                "63.6",
+                "64.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 11,
+            "centre_m": 11.0,
+            "beam_velocity": {
+              "values": [
+                "75",
+                "-76",
+                "-36",
+                "35"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "98",
+                "95",
+                "96",
+                "104"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "61.1",
+                "60.4",
+                "61.6",
+                "60.6"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 12,
+            "centre_m": 12.0,
+            "beam_velocity": {
+              "values": [
+                "70",
+                "-74",
+                "-39",
+                "35"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "101",
+                "107",
+                "97",
+                "95"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "57.9",
+                "57.8",
+                "58.0",
+                "57.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          }
+        ],
+        "bottom_track": {
+          "range": {
+            "values": [
+              "21.28",
+              "21.28",
+              "21.28",
+              "21.28"
+            ],
+            "unit": "m"
+          },
+          "range_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "beam_velocity": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "unit": "mm/s"
+          },
+          "velocity_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        }
+      },
+      {
+        "ping_id": "p08",
+        "t_s": 28.0,
+        "cells": [
+          {
+            "cell_no": 1,
+            "centre_m": 1.0,
+            "beam_velocity": {
+              "values": [
+                "123",
+                "-98",
+                "-18",
+                "42"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "102",
+                "112",
+                "102",
+                "105"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "92.4",
+                "92.2",
+                "91.7",
+                "92.1"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 2,
+            "centre_m": 2.0,
+            "beam_velocity": {
+              "values": [
+                "117",
+                "-96",
+                "-21",
+                "43"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "102",
+                "101",
+                "98",
+                "107"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "88.6",
+                "89.4",
+                "89.2",
+                "88.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 3,
+            "centre_m": 3.0,
+            "beam_velocity": {
+              "values": [
+                "112",
+                "-93",
+                "-24",
+                "43"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "101",
+                "102",
+                "103",
+                "111"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "85.9",
+                "85.9",
+                "85.4",
+                "85.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 4,
+            "centre_m": 4.0,
+            "beam_velocity": {
+              "values": [
+                "106",
+                "-90",
+                "-27",
+                "43"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "109",
+                "104",
+                "98"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "82.5",
+                "82.4",
+                "82.8",
+                "82.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 5,
+            "centre_m": 5.0,
+            "beam_velocity": {
+              "values": [
+                "101",
+                "-88",
+                "-30",
+                "43"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "104",
+                "109",
+                "102"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "79.5",
+                "79.3",
+                "79.2",
+                "79.1"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 6,
+            "centre_m": 6.0,
+            "beam_velocity": {
+              "values": [
+                "95",
+                "-85",
+                "-33",
+                "43"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "110",
+                "96",
+                "108",
+                "105"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "76.1",
+                "75.9",
+                "76.1",
+                "76.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 7,
+            "centre_m": 7.0,
+            "beam_velocity": {
+              "values": [
+                "90",
+                "-83",
+                "-36",
+                "43"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "112",
+                "110",
+                "98",
+                "112"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "73.6",
+                "73.5",
+                "73.4",
+                "73.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 8,
+            "centre_m": 8.0,
+            "beam_velocity": {
+              "values": [
+                "85",
+                "-80",
+                "-39",
+                "43"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "98",
+                "108",
+                "112",
+                "108"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "70.9",
+                "70.5",
+                "70.2",
+                "69.8"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 9,
+            "centre_m": 9.0,
+            "beam_velocity": {
+              "values": [
+                "79",
+                "-77",
+                "-42",
+                "43"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "109",
+                "97",
+                "111",
+                "105"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "67.5",
+                "67.2",
+                "67.7",
+                "67.4"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 10,
+            "centre_m": 10.0,
+            "beam_velocity": {
+              "values": [
+                "74",
+                "-75",
+                "-44",
+                "44"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "97",
+                "95",
+                "101",
+                "100"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "63.8",
+                "63.8",
+                "63.6",
+                "63.6"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 11,
+            "centre_m": 11.0,
+            "beam_velocity": {
+              "values": [
+                "68",
+                "-72",
+                "-47",
+                "44"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "109",
+                "109",
+                "98",
+                "104"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "61.5",
+                "60.6",
+                "60.8",
+                "60.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 12,
+            "centre_m": 12.0,
+            "beam_velocity": {
+              "values": [
+                "63",
+                "-69",
+                "-50",
+                "44"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "112",
+                "108",
+                "98",
+                "95"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "57.3",
+                "58.3",
+                "58.4",
+                "58.2"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          }
+        ],
+        "bottom_track": {
+          "range": {
+            "values": [
+              "21.28",
+              "21.28",
+              "21.28",
+              "21.28"
+            ],
+            "unit": "m"
+          },
+          "range_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "beam_velocity": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "unit": "mm/s"
+          },
+          "velocity_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        }
+      },
+      {
+        "ping_id": "p09",
+        "t_s": 40.0,
+        "cells": [
+          {
+            "cell_no": 1,
+            "centre_m": 1.0,
+            "beam_velocity": {
+              "values": [
+                "97",
+                "-80",
+                "-65",
+                "81"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "111",
+                "108",
+                "104",
+                "99"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "91.8",
+                "92.3",
+                "91.6",
+                "91.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 2,
+            "centre_m": 2.0,
+            "beam_velocity": {
+              "values": [
+                "91",
+                "-78",
+                "-66",
+                "79"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "112",
+                "112",
+                "110"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "89.1",
+                "88.4",
+                "89.0",
+                "89.2"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 3,
+            "centre_m": 3.0,
+            "beam_velocity": {
+              "values": [
+                "85",
+                "-75",
+                "-67",
+                "78"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "112",
+                "96",
+                "102",
+                "99"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "86.2",
+                "85.4",
+                "85.8",
+                "85.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 4,
+            "centre_m": 4.0,
+            "beam_velocity": {
+              "values": [
+                "80",
+                "-72",
+                "-68",
+                "76"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "97",
+                "112",
+                "95",
+                "98"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "83.1",
+                "82.4",
+                "83.2",
+                "82.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 5,
+            "centre_m": 5.0,
+            "beam_velocity": {
+              "values": [
+                "74",
+                "-69",
+                "-69",
+                "74"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "112",
+                "97",
+                "104",
+                "112"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "79.1",
+                "79.9",
+                "79.4",
+                "79.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 6,
+            "centre_m": 6.0,
+            "beam_velocity": {
+              "values": [
+                "68",
+                "-66",
+                "-70",
+                "73"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "108",
+                "107",
+                "95",
+                "96"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "76.9",
+                "76.2",
+                "76.2",
+                "76.0"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 7,
+            "centre_m": 7.0,
+            "beam_velocity": {
+              "values": [
+                "63",
+                "-63",
+                "-71",
+                "71"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "109",
+                "108",
+                "112",
+                "102"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "73.9",
+                "73.4",
+                "73.8",
+                "73.5"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 8,
+            "centre_m": 8.0,
+            "beam_velocity": {
+              "values": [
+                "57",
+                "-60",
+                "-72",
+                "69"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "100",
+                "107",
+                "101",
+                "100"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "70.5",
+                "70.0",
+                "70.5",
+                "70.6"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 9,
+            "centre_m": 9.0,
+            "beam_velocity": {
+              "values": [
+                "51",
+                "-57",
+                "-73",
+                "68"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "97",
+                "111",
+                "102"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "66.9",
+                "67.6",
+                "66.6",
+                "66.9"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 10,
+            "centre_m": 10.0,
+            "beam_velocity": {
+              "values": [
+                "46",
+                "-54",
+                "-74",
+                "66"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "108",
+                "110",
+                "112",
+                "107"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "63.5",
+                "64.4",
+                "63.7",
+                "64.6"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 11,
+            "centre_m": 11.0,
+            "beam_velocity": {
+              "values": [
+                "40",
+                "-51",
+                "-76",
+                "65"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "105",
+                "112",
+                "112",
+                "98"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "60.5",
+                "60.9",
+                "61.2",
+                "61.1"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 12,
+            "centre_m": 12.0,
+            "beam_velocity": {
+              "values": [
+                "34",
+                "-48",
+                "-77",
+                "63"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "100",
+                "101",
+                "101",
+                "109"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "57.7",
+                "58.3",
+                "57.4",
+                "57.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          }
+        ],
+        "bottom_track": {
+          "range": {
+            "values": [
+              "21.28",
+              "21.28",
+              "21.28",
+              "21.28"
+            ],
+            "unit": "m"
+          },
+          "range_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "beam_velocity": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "unit": "mm/s"
+          },
+          "velocity_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        }
+      },
+      {
+        "ping_id": "p10",
+        "t_s": 44.0,
+        "cells": [
+          {
+            "cell_no": 1,
+            "centre_m": 1.0,
+            "beam_velocity": {
+              "values": [
+                "85",
+                "-70",
+                "-77",
+                "92"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "97",
+                "100",
+                "106",
+                "110"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "91.6",
+                "92.2",
+                "91.8",
+                "92.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 2,
+            "centre_m": 2.0,
+            "beam_velocity": {
+              "values": [
+                "79",
+                "-68",
+                "-78",
+                "89"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "104",
+                "106",
+                "96"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "88.5",
+                "89.3",
+                "89.1",
+                "89.0"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 3,
+            "centre_m": 3.0,
+            "beam_velocity": {
+              "values": [
+                "74",
+                "-65",
+                "-78",
+                "87"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "99",
+                "98",
+                "98",
+                "110"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "85.7",
+                "86.1",
+                "85.7",
+                "85.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 4,
+            "centre_m": 4.0,
+            "beam_velocity": {
+              "values": [
+                "68",
+                "-62",
+                "-79",
+                "85"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "105",
+                "98",
+                "110",
+                "97"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "82.4",
+                "83.2",
+                "83.2",
+                "82.8"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 5,
+            "centre_m": 5.0,
+            "beam_velocity": {
+              "values": [
+                "63",
+                "-59",
+                "-79",
+                "83"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "103",
+                "104",
+                "99",
+                "105"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "79.8",
+                "80.1",
+                "79.9",
+                "80.0"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 6,
+            "centre_m": 6.0,
+            "beam_velocity": {
+              "values": [
+                "57",
+                "-56",
+                "-80",
+                "80"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "104",
+                "109",
+                "96",
+                "104"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "76.6",
+                "76.0",
+                "76.1",
+                "76.3"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 7,
+            "centre_m": 7.0,
+            "beam_velocity": {
+              "values": [
+                "51",
+                "-53",
+                "-80",
+                "78"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "101",
+                "110",
+                "95",
+                "110"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "72.9",
+                "73.2",
+                "73.3",
+                "72.8"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 8,
+            "centre_m": 8.0,
+            "beam_velocity": {
+              "values": [
+                "46",
+                "-50",
+                "-81",
+                "76"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "111",
+                "105",
+                "101",
+                "109"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "69.9",
+                "70.0",
+                "70.6",
+                "69.8"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 9,
+            "centre_m": 9.0,
+            "beam_velocity": {
+              "values": [
+                "40",
+                "-47",
+                "-81",
+                "74"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "101",
+                "102",
+                "105",
+                "101"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "66.9",
+                "67.1",
+                "66.8",
+                "67.2"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 10,
+            "centre_m": 10.0,
+            "beam_velocity": {
+              "values": [
+                "35",
+                "-45",
+                "-82",
+                "72"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "112",
+                "107",
+                "95",
+                "112"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "64.4",
+                "63.6",
+                "64.1",
+                "64.0"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 11,
+            "centre_m": 11.0,
+            "beam_velocity": {
+              "values": [
+                "29",
+                "-42",
+                "-82",
+                "69"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "107",
+                "110",
+                "109",
+                "105"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "60.6",
+                "61.2",
+                "61.5",
+                "61.6"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          },
+          {
+            "cell_no": 12,
+            "centre_m": 12.0,
+            "beam_velocity": {
+              "values": [
+                "23",
+                "-39",
+                "-83",
+                "67"
+              ],
+              "unit": "mm/s"
+            },
+            "correlation": {
+              "values": [
+                "100",
+                "112",
+                "109",
+                "100"
+              ],
+              "unit": "counts"
+            },
+            "amplitude": {
+              "values": [
+                "57.4",
+                "57.9",
+                "58.3",
+                "57.7"
+              ],
+              "unit": "dB"
+            },
+            "bad_flag": {
+              "values": [
+                "0",
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          }
+        ],
+        "bottom_track": {
+          "range": {
+            "values": [
+              "21.28",
+              "21.28",
+              "21.28",
+              "21.28"
+            ],
+            "unit": "m"
+          },
+          "range_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          },
+          "beam_velocity": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ],
+            "unit": "mm/s"
+          },
+          "velocity_bad_flag": {
+            "values": [
+              "0",
+              "0",
+              "0",
+              "0"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "script": [
+    {
+      "op": "flag_bad_beam",
+      "ping": "p03",
+      "beam": 4,
+      "label": "单 beam 失效（p03 波束4 硬件坏标志）",
+      "expect": {
+        "code": "single-beam-failure",
+        "contained_to_pings": [
+          "p03"
+        ]
+      }
+    },
+    {
+      "op": "attitude_outage",
+      "gap": [
+        14.0,
+        26.0
+      ],
+      "remove_att": [
+        "a04",
+        "a05"
+      ],
+      "label": "姿态缺口（14–26s），插值不得跨缺口",
+      "expect": {
+        "code": "attitude-gap-refused",
+        "contained_to_pings": [
+          "p05",
+          "p06",
+          "p07"
+        ]
+      }
+    },
+    {
+      "op": "set_correlation",
+      "ping": "p08",
+      "beam": 4,
+      "value_counts": 72,
+      "label": "三波束多解（p08 波束4 相关度落入可疑带）",
+      "expect": {
+        "code": "three-beam-ambiguity",
+        "candidate_kinds": [
+          "4-beam",
+          "3-beam"
+        ],
+        "contained_to_pings": [
+          "p08"
+        ]
+      }
+    },
+    {
+      "op": "shallow_bottom",
+      "ping": "p09",
+      "ranges_m": [
+        6.0,
+        6.0,
+        5.9,
+        6.0
+      ],
+      "bad_amplitude": {
+        "cell": 6,
+        "beam": 2,
+        "raw": "ovf"
+      },
+      "label": "无效深度 cell + 不可解析原始值（p09）",
+      "expect": {
+        "code": "invalid-depth-cell",
+        "contained_to_pings": [
+          "p09"
+        ]
+      }
+    },
+    {
+      "op": "revise_mount",
+      "angle_deg": 2.5,
+      "version_id": "mount-v2",
+      "label": "安装角修订 0°→2.5°（全局传播）",
+      "expect": {
+        "code": "mount-revision",
+        "recompute": [
+          "ship",
+          "earth"
+        ],
+        "unchanged": [
+          "beam",
+          "instrument",
+          "bottom"
+        ]
+      }
+    },
+    {
+      "op": "branch_transform_order",
+      "order": "hpr-v2",
+      "version_id": "order-v2",
+      "label": "坐标转换顺序分支 hpr-v2（指纹不同）",
+      "expect": {
+        "code": "transform-order-branch"
+      }
+    },
+    {
+      "op": "review_branch",
+      "decision": "reject",
+      "label": "比对后否决 hpr-v2，保留未选分支",
+      "expect": {
+        "code": "branch-rejected"
+      }
+    },
+    {
+      "op": "local_source_edit",
+      "ping": "p10",
+      "cell": 2,
+      "beam": 1,
+      "field": "correlation",
+      "value_counts": 55,
+      "label": "局部源数据改动（仅 p10/c2 重算）",
+      "expect": {
+        "code": "local-source-edit",
+        "contained_to": [
+          "p10",
+          2
+        ]
+      }
+    },
+    {
+      "op": "decide",
+      "ping": "p08",
+      "choice": "3-beam",
+      "actor": "hydrologist-a",
+      "label": "使用者 A 采纳 p08 三波束解",
+      "expect": {
+        "code": "decision-recorded"
+      }
+    },
+    {
+      "op": "decide_conflict",
+      "ping": "p08",
+      "choice": "4-beam",
+      "actor": "reviewer-b",
+      "label": "使用者 B 基于同一版本改选四波束 → 可解决冲突",
+      "expect": {
+        "code": "decision-conflict",
+        "resolution": "keep-a",
+        "retained": [
+          "3-beam",
+          "4-beam"
+        ]
+      }
+    }
+  ]
+}
