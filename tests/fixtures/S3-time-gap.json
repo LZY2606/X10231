@@ -1,0 +1,1639 @@
+{
+  "case_pack": "adcp-beam-stage",
+  "title": "流束换算台：ADCP 波束速度、姿态旋转与质量层级",
+  "version": "v1-S3-time-gap",
+  "pings": [
+    {
+      "ping": 0,
+      "time_s": 0.0,
+      "beam_velocity_raw": [
+        [
+          -55.15,
+          107.83,
+          71.39,
+          -131.59
+        ],
+        [
+          -43.66,
+          105.64,
+          76.05,
+          -113.25
+        ],
+        [
+          -34.38,
+          101.24,
+          78.49,
+          -97.13
+        ],
+        [
+          -28.96,
+          92.97,
+          77.06,
+          -84.88
+        ],
+        [
+          -28.14,
+          80.12,
+          71.04,
+          -77.21
+        ],
+        [
+          -31.5,
+          63.07,
+          60.84,
+          -73.73
+        ]
+      ],
+      "velocity_unit": "mm/s",
+      "correlation": [
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ]
+      ],
+      "amplitude": [
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ]
+      ],
+      "bad_beam": [
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "cells": [
+        {
+          "depth_raw": 1.0,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 1.5,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.0,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.5,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.0,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.5,
+          "depth_unit": "m",
+          "invalid": false
+        }
+      ],
+      "bottom_track_raw": [
+        -22.2,
+        77.51,
+        46.2,
+        -93.51
+      ],
+      "bottom_track_unit": "mm/s"
+    },
+    {
+      "ping": 1,
+      "time_s": 1.0,
+      "beam_velocity_raw": [
+        [
+          -43.33,
+          123.21,
+          83.79,
+          -122.76
+        ],
+        [
+          -35.44,
+          117.42,
+          84.84,
+          -108.03
+        ],
+        [
+          -31.84,
+          107.34,
+          81.6,
+          -97.59
+        ],
+        [
+          -32.8,
+          92.7,
+          73.79,
+          -91.71
+        ],
+        [
+          -37.48,
+          74.34,
+          62.27,
+          -89.55
+        ],
+        [
+          -44.13,
+          54.01,
+          48.78,
+          -89.36
+        ]
+      ],
+      "velocity_unit": "mm/s",
+      "correlation": [
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ]
+      ],
+      "amplitude": [
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ]
+      ],
+      "bad_beam": [
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "cells": [
+        {
+          "depth_raw": 1.001,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 1.501,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.001,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.501,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.001,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.501,
+          "depth_unit": "m",
+          "invalid": false
+        }
+      ],
+      "bottom_track_raw": [
+        -22.2,
+        77.51,
+        46.2,
+        -93.51
+      ],
+      "bottom_track_unit": "mm/s"
+    },
+    {
+      "ping": 2,
+      "time_s": 2.0,
+      "beam_velocity_raw": [
+        [
+          -37.73,
+          132.1,
+          91.01,
+          -118.82
+        ],
+        [
+          -35.99,
+          120.17,
+          85.92,
+          -110.24
+        ],
+        [
+          -38.6,
+          103.88,
+          76.47,
+          -106.01
+        ],
+        [
+          -44.31,
+          84.48,
+          63.91,
+          -104.88
+        ],
+        [
+          -51.13,
+          63.98,
+          50.25,
+          -104.86
+        ],
+        [
+          -56.77,
+          44.66,
+          37.77,
+          -103.66
+        ]
+      ],
+      "velocity_unit": "mm/s",
+      "correlation": [
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ]
+      ],
+      "amplitude": [
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ]
+      ],
+      "bad_beam": [
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "cells": [
+        {
+          "depth_raw": 1.002,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 1.502,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.002,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.502,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.002,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.502,
+          "depth_unit": "m",
+          "invalid": false
+        }
+      ],
+      "bottom_track_raw": [
+        -22.2,
+        77.51,
+        46.2,
+        -93.51
+      ],
+      "bottom_track_unit": "mm/s"
+    },
+    {
+      "ping": 3,
+      "time_s": 3.0,
+      "beam_velocity_raw": [
+        [
+          -41.29,
+          130.87,
+          89.98,
+          -122.19
+        ],
+        [
+          -45.34,
+          113.14,
+          79.08,
+          -119.4
+        ],
+        [
+          -51.77,
+          93.03,
+          65.82,
+          -118.99
+        ],
+        [
+          -58.39,
+          72.73,
+          52.36,
+          -118.76
+        ],
+        [
+          -62.97,
+          54.47,
+          40.94,
+          -116.51
+        ],
+        [
+          -63.79,
+          39.97,
+          33.28,
+          -110.48
+        ]
+      ],
+      "velocity_unit": "mm/s",
+      "correlation": [
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ]
+      ],
+      "amplitude": [
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ]
+      ],
+      "bad_beam": [
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "cells": [
+        {
+          "depth_raw": 1.003,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 1.503,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.003,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.503,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.003,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.503,
+          "depth_unit": "m",
+          "invalid": false
+        }
+      ],
+      "bottom_track_raw": [
+        -22.2,
+        77.51,
+        46.2,
+        -93.51
+      ],
+      "bottom_track_unit": "mm/s"
+    },
+    {
+      "ping": 4,
+      "time_s": 4.0,
+      "beam_velocity_raw": [
+        [
+          -52.78,
+          120.34,
+          81.61,
+          -131.51
+        ],
+        [
+          -59.56,
+          99.88,
+          67.99,
+          -131.45
+        ],
+        [
+          -65.61,
+          80.15,
+          55.1,
+          -130.66
+        ],
+        [
+          -68.85,
+          63.23,
+          45.02,
+          -127.06
+        ],
+        [
+          -67.88,
+          50.53,
+          39.16,
+          -119.25
+        ],
+        [
+          -62.31,
+          42.41,
+          37.88,
+          -106.84
+        ]
+      ],
+      "velocity_unit": "mm/s",
+      "correlation": [
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ]
+      ],
+      "amplitude": [
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ]
+      ],
+      "bad_beam": [
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "cells": [
+        {
+          "depth_raw": 1.004,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 1.504,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.004,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.504,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.004,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.504,
+          "depth_unit": "m",
+          "invalid": false
+        }
+      ],
+      "bottom_track_raw": [
+        -22.2,
+        77.51,
+        46.2,
+        -93.51
+      ],
+      "bottom_track_unit": "mm/s"
+    },
+    {
+      "ping": 5,
+      "time_s": 5.0,
+      "beam_velocity_raw": [
+        [
+          -67.37,
+          105.33,
+          70.42,
+          -142.27
+        ],
+        [
+          -72.52,
+          86.5,
+          58.43,
+          -140.58
+        ],
+        [
+          -74.19,
+          71.15,
+          49.93,
+          -135.41
+        ],
+        [
+          -71.36,
+          60.3,
+          45.92,
+          -125.74
+        ],
+        [
+          -64.11,
+          53.86,
+          46.32,
+          -111.66
+        ],
+        [
+          -53.62,
+          50.67,
+          49.97,
+          -94.33
+        ]
+      ],
+      "velocity_unit": "mm/s",
+      "correlation": [
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ]
+      ],
+      "amplitude": [
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ]
+      ],
+      "bad_beam": [
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "cells": [
+        {
+          "depth_raw": 1.005,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 1.505,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.005,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.505,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.005,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.505,
+          "depth_unit": "m",
+          "invalid": false
+        }
+      ],
+      "bottom_track_raw": [
+        -22.2,
+        77.51,
+        46.2,
+        -93.51
+      ],
+      "bottom_track_unit": "mm/s"
+    },
+    {
+      "ping": 6,
+      "time_s": 6.0,
+      "beam_velocity_raw": [
+        [
+          -78.8,
+          92.41,
+          62.28,
+          -148.93
+        ],
+        [
+          -78.73,
+          78.8,
+          55.51,
+          -142.02
+        ],
+        [
+          -74.06,
+          69.79,
+          53.34,
+          -130.51
+        ],
+        [
+          -65.33,
+          64.84,
+          55.23,
+          -114.94
+        ],
+        [
+          -54.06,
+          62.43,
+          59.66,
+          -96.83
+        ],
+        [
+          -42.41,
+          60.4,
+          64.47,
+          -78.34
+        ]
+      ],
+      "velocity_unit": "mm/s",
+      "correlation": [
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ]
+      ],
+      "amplitude": [
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ]
+      ],
+      "bad_beam": [
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "cells": [
+        {
+          "depth_raw": 1.006,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 1.506,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.006,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.506,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.006,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.506,
+          "depth_unit": "m",
+          "invalid": false
+        }
+      ],
+      "bottom_track_raw": [
+        -22.2,
+        77.51,
+        46.2,
+        -93.51
+      ],
+      "bottom_track_unit": "mm/s"
+    },
+    {
+      "ping": 7,
+      "time_s": 7.0,
+      "beam_velocity_raw": [
+        [
+          -82.29,
+          86.96,
+          61.6,
+          -147.65
+        ],
+        [
+          -75.87,
+          79.7,
+          61.19,
+          -134.39
+        ],
+        [
+          -65.89,
+          76.0,
+          64.32,
+          -117.57
+        ],
+        [
+          -54.19,
+          74.02,
+          69.18,
+          -99.03
+        ],
+        [
+          -43.03,
+          71.5,
+          73.5,
+          -81.03
+        ],
+        [
+          -34.53,
+          66.32,
+          75.16,
+          -65.69
+        ]
+      ],
+      "velocity_unit": "mm/s",
+      "correlation": [
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ],
+        [
+          180,
+          175,
+          178,
+          170
+        ]
+      ],
+      "amplitude": [
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ],
+        [
+          120,
+          118,
+          122,
+          115
+        ]
+      ],
+      "bad_beam": [
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          false,
+          false,
+          false
+        ]
+      ],
+      "cells": [
+        {
+          "depth_raw": 1.007,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 1.507,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.007,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 2.507,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.007,
+          "depth_unit": "m",
+          "invalid": false
+        },
+        {
+          "depth_raw": 3.507,
+          "depth_unit": "m",
+          "invalid": false
+        }
+      ],
+      "bottom_track_raw": [
+        -22.2,
+        77.51,
+        46.2,
+        -93.51
+      ],
+      "bottom_track_unit": "mm/s"
+    }
+  ],
+  "attitude": {
+    "times": [
+      0.0,
+      1.0,
+      2.0,
+      3.0,
+      4.0,
+      11.0,
+      12.0
+    ],
+    "heading_deg": [
+      12.0,
+      12.4,
+      13.0,
+      359.2,
+      359.8,
+      2.0,
+      2.4
+    ],
+    "pitch_deg": [
+      1.0,
+      1.0841,
+      1.0909,
+      1.0141,
+      0.9243,
+      0.9,
+      0.9463
+    ],
+    "roll_deg": [
+      -0.42,
+      -0.4568,
+      -0.5333,
+      -0.5792,
+      -0.5523,
+      -0.4996,
+      -0.4325
+    ],
+    "unit": "deg"
+  },
+  "declination": {
+    "value_deg": -7.5,
+    "unit": "deg",
+    "east_positive": true
+  },
+  "mounting": {
+    "heading_alignment_deg": 0.0,
+    "pitch_alignment_deg": 0.0,
+    "roll_alignment_deg": 0.0
+  },
+  "geometry": {
+    "beam_angle_deg": 20.0,
+    "config_code": "convex_down",
+    "beam_count": 4
+  },
+  "quality_rules": {
+    "min_correlation": 64,
+    "min_amplitude_counts": 40,
+    "max_error_velocity_mps": 0.5,
+    "min_depth_m": 0.3,
+    "max_depth_m": 30.0
+  },
+  "transform_order": "HPR",
+  "attitude_max_gap_s": 2.0,
+  "scenario": "S3-time-gap"
+}
