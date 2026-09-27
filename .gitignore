@@ -34,3 +34,10 @@ coverage/
 .vite/
 .turbo/
 *.tsbuildinfo
+
+# --- 本地运行数据 ---
+data/
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.json.bak
